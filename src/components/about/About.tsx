@@ -42,7 +42,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className='flex overflow-x-scroll md:grid md:grid-cols-6 gap-4'>
+            <div className='flex overflow-x-scroll custom-scrollbar whitespace-wrap md:grid md:grid-cols-6 gap-4'>
               <Hobbit />
             </div>
 

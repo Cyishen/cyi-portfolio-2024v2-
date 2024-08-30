@@ -36,7 +36,7 @@ const Hobbit = () => {
       <div className='md:col-span-2 about-title-type'>
         <h2>interests</h2>
 
-        <div className='flex gap-2 mt-2 overflow-hidden overflow-x-scroll custom-scrollbar whitespace-wrap'>
+        <div className='flex gap-4 mt-4 overflow-hidden overflow-x-scroll custom-scrollbar whitespace-wrap'>
           <div className='flex flex-col w-fit items-center justify-center'>
             <Image src={icons.workout} alt='workout' width={30} height={30}/>
             <p className='font-thin text-sm'>workout</p>
