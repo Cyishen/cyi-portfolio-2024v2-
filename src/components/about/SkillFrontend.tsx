@@ -63,7 +63,7 @@ const SkillFrontend = () => {
 
   return (
     <div className='flex flex-col overflow-hidden gap-2'>
-      <div className='flex flex-col h-[250px] w-full'>
+      <div className='flex flex-col w-full'>
         <p className='text-sm font-bold mt-2'>前端</p>
         <ul className='list-disc list-inside px-2 text-sm font-light'>
           <li>響應式設計: 專注於開發響應式設計，提升行動裝置的可用性，增加行動端流量。</li>
@@ -71,7 +71,7 @@ const SkillFrontend = () => {
           <li>前後端整合: 前端與後端 API 的整合，確保流暢的數據交互和功能實現。</li>
         </ul>
 
-        <div className='relative flex-1 mt-2' ref={contraction}>
+        <div className='relative flex mt-2 h-[200px]' ref={contraction}>
           {toolboxItems.map((item) => (
             <motion.div key={item.title}
               className={`inline-flex gap-2 px-6 border rounded-full py-1 absolute cursor-pointer hover:opacity-80`}

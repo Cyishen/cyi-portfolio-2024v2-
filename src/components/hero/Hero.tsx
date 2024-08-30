@@ -1,43 +1,76 @@
-import HeroSatellite from "../HeroSatellite";
+"use client"
+
 import { TextEffect } from "../../lib/framer-motion/TextEffect";
 import { Button } from "../ui/button"
 import { SquareTerminal, StarIcon } from 'lucide-react';
 import Wrapper from "../Wrapper";
 
+import HeroSatellite from "../HeroSatellite";
+import {  motion, useInView } from 'framer-motion';
+import { useRef } from "react";
+
+export const textVariants = {
+  initial: {
+      y: 50,
+      opacity: 0
+  },
+  open: {
+      y: 0,
+      opacity: 1,
+      transition: {
+          duration: 1,
+          staggerChildren: 0.3,
+      }
+  },
+  closed: {
+      opacity: 0,
+      transition: {duration: 0.5}
+  }
+}
 
 const Hero = () => {
+  const jumpRef = useRef(null);
+  const isInView = useInView(jumpRef, { once: false })
+
   return (
     <div className='flex w-full py-28 md:py-48 relative overflow-hidden bg-gray-50 h-screen'>
       <Wrapper>
-        {/* <div className="size-[620px] hero-ring"/>
+        <div className="size-[620px] hero-ring"/>
         <div className="size-[820px] hero-ring"/>
-        <div className="size-[1020px] hero-ring"/> */}
+        <div className="size-[1020px] hero-ring"/>
 
         {/* <HeroSatellite size={500} rotation={-45}>
           <StarIcon className="size-14"/>
         </HeroSatellite> */}
 
         <div className='flex flex-col items-center w-full'>
-          <div className="flex flex-col items-center">
-            <div className="flex items-center gap-2">
-              <h2 className="font-extrabold text-3xl md:text-5xl py-2">
+          <motion.div 
+              className="flex flex-col items-center"
+              variants={textVariants}
+              initial="initial"
+              animate={isInView ? "open" : "closed"}
+              ref={jumpRef}
+          >
+            <motion.div variants={textVariants} className="flex items-center gap-2" >
+              <h2 className="font-extrabold text-3xl md:text-5xl py-2" >
                 Hi, there
               </h2>
               <div className="animate-accordion-hi [animation-duration:2s]">
                 <span className="text-3xl">👋</span>
               </div>
-            </div>
+            </motion.div>
 
-            <h2 className="font-extrabold text-3xl md:text-5xl py-2">
+            <motion.h2 variants={textVariants} className="font-extrabold text-3xl md:text-5xl py-2"               >
               I&apos;m 
-            </h2>
-            <h2 className="font-extrabold text-3xl md:text-5xl pb-4">Chen Yi Shen</h2>
+            </motion.h2>
 
-            <div className="bg-black px-4 py-1 inline-flex text-white items-center justify-center gap-2 rounded-full ">
+            <motion.h2 variants={textVariants} className="font-extrabold text-3xl md:text-5xl pb-4"               >Chen Yi Shen</motion.h2>
+
+            <motion.div variants={textVariants} className="bg-black px-4 py-1 inline-flex text-white items-center justify-center gap-2 rounded-full">
               <div className="bg-green-500 size-2 rounded-full"></div>
               <p className="text-sm font-semibold"> Available Contact </p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           <h1 className="font-bold text-3xl text-center mt-8">Developer</h1>
           

@@ -17,7 +17,7 @@ export function BarStickyItem() {
     {
       label: 'Contact',
       icon: <PhoneCall className='h-5 w-5' />,
-      href: '/',
+      href: '/#contact',
     },
   ];
 

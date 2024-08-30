@@ -29,7 +29,7 @@ const SkillBackend = () => {
 
   return (
     <div className='flex flex-col overflow-hidden gap-2'>
-      <div className='flex flex-col h-[200px] w-full'>
+      <div className='flex flex-col w-full'>
         <p className='text-sm font-bold mt-2'>後端</p>
         <ul className='list-disc list-inside px-2 text-sm font-light'>
           <li>後端: Python 模型訓練、影像OpenCV、爬蟲等基本應用。</li>
@@ -37,7 +37,7 @@ const SkillBackend = () => {
           <li>API: 後端 API 的設計與建立，能夠提供高效、可靠的數據服務。</li>
         </ul>
 
-        <div className='relative flex-1 mt-2' ref={contraction}>
+        <div className='relative flex mt-2 h-[100px]' ref={contraction}>
           {toolboxItems.map((item) => (
             <motion.div key={item.title}
               className={`inline-flex gap-2 px-6 border rounded-full py-1 absolute cursor-pointer hover:opacity-80`}
