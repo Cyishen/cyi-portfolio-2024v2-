@@ -1,12 +1,9 @@
 import Wrapper from '../Wrapper'
 
 import Introduce from './Introduce'
-import Experience from './Experience'
 import Hobbit from './Hobbit'
-
-import SkillFrontend from './SkillFrontend'
-import SkillBackend from './SkillBackend'
-import SkillOther from './SkillOther'
+import SkillDrag from './SkillDrag'
+import Experience from './Experience'
 
 
 const About = () => {
@@ -23,13 +20,8 @@ const About = () => {
               <Hobbit />
             </div>
 
-            <div className='grid grid-cols-1 gap-3'>
-              <div className='col-span-1 about-title-type'>
-                <h2>skill</h2>
-                <SkillFrontend />
-                <SkillBackend />
-                <SkillOther />
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-1 md:grid-rows-2 gap-3">
+              <SkillDrag />
             </div>
 
             <div className='grid grid-cols-1 md:grid-cols-1 gap-3'>

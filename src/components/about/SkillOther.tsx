@@ -2,11 +2,12 @@
 
 import React, { useRef } from 'react'
 import { motion } from 'framer-motion'
-import { frontend, motionIcon } from '@/lib/icon'
+
 import Image from 'next/image'
+import { motionIcon } from '@/lib/icon'
 
 
-const toolboxItems = [
+const otherDrag = [
   {
     title: "Motion",
     icon: motionIcon.framer,
@@ -34,31 +35,22 @@ const SkillOther = () => {
   const contraction = useRef(null)
 
   return (
-    <div className='flex flex-col overflow-hidden gap-2'>
-      <div className='flex flex-col w-full'>
-        <p className='text-sm font-bold mt-2'>其他</p>
-        <ul className='list-disc list-inside px-2 text-sm font-light'>
-          <li>特效與其他工具。</li>
-        </ul>
-
-        <div className='relative flex mt-2 h-[100px]' ref={contraction}>
-          {toolboxItems.map((item) => (
-            <motion.div key={item.title}
-              className={`inline-flex gap-2 px-6 border rounded-full py-1 absolute cursor-pointer hover:opacity-80`}
-              style={{
-                left: item.left,
-                top: item.top,
-                backgroundColor: item.color,
-              }}
-              drag
-              dragConstraints={contraction}
-            >
-              <span className='text-sm font-extralight'>{item.title}</span>
-              <Image src={item.icon} alt={item.title} width={20} height={20} className='pointer-events-none'/>
-            </motion.div>
-          ))}
-        </div>
-      </div>
+    <div className='relative flex h-[60px] mt-auto' ref={contraction}>
+      {otherDrag.map((item) => (
+        <motion.div key={item.title}
+          className='inline-flex gap-2 px-6 border rounded-full py-1 absolute cursor-pointer hover:opacity-80'
+          style={{
+            left: item.left,
+            top: item.top,
+            backgroundColor: item.color,
+          }}
+          drag
+          dragConstraints={contraction}
+        >
+          <span className='text-sm font-thin'>{item.title}</span>
+          <Image src={item.icon} alt={item.title} width={20} height={20} className='pointer-events-none' />
+        </motion.div>
+      ))}
     </div>
   )
 }
