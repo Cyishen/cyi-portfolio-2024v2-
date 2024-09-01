@@ -33,7 +33,8 @@ const Hero = () => {
   const isInView = useInView(jumpRef, { once: false })
 
   return (
-    <div className='flex w-full py-28 md:py-48 relative overflow-hidden bg-gray-50 h-screen'>
+    <div className='relative flex w-full py-28 md:py-48 h-screen border-t-2 rounded-t-3xl overflow-hidden bg-gray-50'>
+      <div className="absolute top-3 left-1/2 -translate-x-1/2 h-2 w-14 rounded-full bg-gray-200"/>
       <Wrapper>
         <div className="size-[620px] hero-ring"/>
         <div className="size-[820px] hero-ring"/>

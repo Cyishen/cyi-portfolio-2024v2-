@@ -19,6 +19,8 @@ import framer from "../../public/skill/framer-motion.svg";
 import gsap from "../../public/skill/gsap.svg";
 import figma from "../../public/skill/figma.svg";
 
+import productImage from "../../public/product-image.png";
+
 
 export const icons = {
   browse,
@@ -48,3 +50,5 @@ export const motionIcon = {
   gsap,
   figma,
 }
+
+export const images = { productImage }
