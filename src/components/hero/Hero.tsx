@@ -12,7 +12,8 @@ import { useRef } from "react";
 export const textVariants = {
   initial: {
       y: 50,
-      opacity: 0
+      opacity: 0,
+      filter: 'blur(10px)'
   },
   open: {
       y: 0,
@@ -20,7 +21,8 @@ export const textVariants = {
       transition: {
           duration: 1,
           staggerChildren: 0.3,
-      }
+      },
+      filter: 'blur(0px)'
   },
   closed: {
       opacity: 0,
