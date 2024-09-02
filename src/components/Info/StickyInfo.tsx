@@ -4,13 +4,11 @@ import Info from './Info'
 const stickInfo = [
   {
     id:1,
-    image: '/image_food3.jpeg',
     title: 'Info',
     path: <Info />
   },
   {
     id:2,
-    image: '/image_food4.jpeg',
     title: 'Contact',
     path: <Contact />
   },

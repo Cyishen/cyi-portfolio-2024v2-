@@ -27,9 +27,9 @@ const FeatureSticky = () => {
       {stickInfo.map((info, index) => (
         <div 
           key={info.id} 
-          className='sticky mb-10'
+          className='sticky'
           style={{
-            top: `calc(72px + ${index * 64}px)`
+            top: `calc(72px + ${index * 72}px)`
           }}
         >
           <div className='w-full overflow-hidden'>

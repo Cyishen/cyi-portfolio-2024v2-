@@ -36,7 +36,7 @@ export function AnimatedTabsHover() {
             className='inline-flex h-9 w-full items-center justify-center text-zinc-500 transition-colors duration-100 focus-visible:outline-2 data-[checked=true]:text-zinc-950 px-2'
           >
             <Link href={tab.href}>
-              <p className='flex items-center space-x-1'>
+              <p className='flex items-center justify-center gap-1'>
                 <span className='hidden sm:block'>{tab.label}</span>
                 <span>{tab.icon}</span>
               </p>

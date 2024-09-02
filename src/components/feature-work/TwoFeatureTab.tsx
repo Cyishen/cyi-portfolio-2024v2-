@@ -81,16 +81,16 @@ const TwoFeatureTab = () => {
 
   return (
     <div className='w-full border-t-2 border-gray-300 rounded-t-3xl p-4 bg-gray-100'>
-      <div className="absolute top-3 left-1/2 -translate-x-1/2 h-2 w-14 rounded-full bg-gray-300"/>
+      <div className="absolute top-4 left-1/2 -translate-x-1/2 h-2 w-14 rounded-full bg-gray-300"/>
 
-      <div className='flex flex-col items-center justify-center mt-3'>
+      <div className='flex flex-col items-center justify-center mt-5'>
         <h2 className='flex justify-center font-bold capitalize text-xl md:text-3xl'>
           移動端 App 
         </h2>
         <p className='font-light'>Mobile App</p>
       </div>
 
-      <div className='mt-5 flex flex-col md:flex-row justify-center gap-4'>
+      <div className='mt-3 flex flex-row justify-center gap-1 md:gap-4'>
         {twoTabs.map((project, index) => (
           <div key={project.id} className='' >
             {project.show === true ? (
@@ -108,7 +108,7 @@ const TwoFeatureTab = () => {
         ))}
       </div>
 
-      <div className='px-4 pt-4 mt-3'>
+      <div className='px-4 pt-4 mt-1'>
         <motion.div
           className='aspect-video bg-cover rounded-t-2xl'
           style={{
@@ -119,6 +119,8 @@ const TwoFeatureTab = () => {
         >
         </motion.div>
       </div>
+
+      <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 h-7 w-full bg-gray-100"/>
     </div>
   )
 }
