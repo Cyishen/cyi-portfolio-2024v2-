@@ -9,7 +9,7 @@ const Contact = () => {
 
 
   return (
-    <div id="contact" className="relative flex w-full py-12 md:py-24 h-screen border-t-2 rounded-t-3xl bg-white/55 backdrop-blur-lg transition-all">
+    <div id="contact" className="relative flex w-full pt-12 pb-5 md:pt-24 md:pb-10 h-screen border-t-2 rounded-t-3xl bg-white/55 backdrop-blur-lg transition-all">
       <div className="absolute top-5 left-1/2 -translate-x-1/2 h-2 w-14 rounded-full bg-gray-300" />
       <Wrapper>
         <div className='w-full flex flex-col h-full'>
@@ -18,8 +18,8 @@ const Contact = () => {
               Contact
             </h2>
           </div>
- 
-          <div className='w-full flex flex-col items-center justify-center mt-10 gap-2'>
+
+          <div className='w-fit flex flex-col items-start justify-center mx-auto mt-10 gap-2 pl-4'>
             <div className='flex items-center justify-center gap-2'>
               <Image src={icons.phone} alt='phone' width={28} height={28} />
               <Copy title='0983-879460' />
@@ -31,7 +31,11 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="w-full flex justify-between mt-auto">
+          <div className="w-full flex flex-col items-center justify-center mt-auto">
+            <Link href='#hero'>
+              <p>Back to top</p>
+            </Link>
+
             <div className='flex items-center justify-center gap-1'>
               <p className='font-thin text-xl'>&copy;</p>
 
@@ -41,10 +45,6 @@ const Contact = () => {
                 <p className=''>CHEN</p>
               </div>
             </div>
-
-            <Link href='#hero'>
-              <p>Back to top</p>
-            </Link>
           </div>
         </div>
       </Wrapper>
