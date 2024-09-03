@@ -18,7 +18,7 @@ const BarSticky = () => {
   })
 
   return (
-    <div className='fixed top-1 sm:top-4 z-50 w-full'>
+    <div className='fixed top-1 sm:top-4 z-[90] w-full'>
       <div className="w-fit mx-auto">
         {scrolled && (
           <motion.div 

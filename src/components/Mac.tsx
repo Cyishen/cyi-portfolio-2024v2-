@@ -1,12 +1,12 @@
 import { cn } from '@/lib/utils'
 import { HTMLAttributes } from 'react'
 
-interface PhoneProps extends HTMLAttributes<HTMLDivElement> {
+interface MacProps extends HTMLAttributes<HTMLDivElement> {
   imgSrc?: string
   dark?: boolean
 }
 
-const Phone = ({ imgSrc, dark = false, className, ...props }: PhoneProps) => {
+const Mac = ({ imgSrc, dark = false, className, ...props }: MacProps) => {
   return (
     <div
       className={cn(
@@ -18,16 +18,16 @@ const Phone = ({ imgSrc, dark = false, className, ...props }: PhoneProps) => {
       <img
         src={
           dark
-            ? '/iphone_8961731.png'
-            : '/iphone_8961731.png'
+            ? '/mac.png'
+            : '/mac.png'
         }
         className='pointer-events-none z-50 select-none'
-        alt='phone frame'
+        alt='mac frame'
       />
 
-      <div className='absolute -z-10 inset-0'>
+      <div className='absolute -z-10 inset-0 px-5 pb-3 pt-0.5 sm:pb-6 sm:px-10 sm:pt-1'>
         <img
-          className='object-cover min-w-full min-h-full sm:pb-2 pt-1 px-1 sm:p-1'
+          className='object-cover min-w-full min-h-full'
           src={imgSrc}
           alt='display image'
         />
@@ -36,4 +36,4 @@ const Phone = ({ imgSrc, dark = false, className, ...props }: PhoneProps) => {
   )
 }
 
-export default Phone
+export default Mac

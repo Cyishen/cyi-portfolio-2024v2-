@@ -3,8 +3,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import { Button } from "../ui/button";
-
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,7 +52,7 @@ const MobileMenu = () => {
 
       {isOpen && (
         <>
-          <div className="fixed top-14 h-screen inset-0 bg-black opacity-50 z-40" onClick={() => setIsOpen(false)} />
+          <div className="fixed top-14 h-screen inset-0 bg-black opacity-80 z-50" onClick={() => setIsOpen(false)} />
 
           <div 
             id="outside-close" 
@@ -67,10 +65,6 @@ const MobileMenu = () => {
               <Link href="/">Home</Link>
               <Link href="/work">Works</Link>
               <Link href="/">Contact</Link>
-
-              <Button variant="ghost" className="text-lg flex mt-auto">
-                <Link href="/">Login</Link>
-              </Button>
             </div>
           </div>
         </>
