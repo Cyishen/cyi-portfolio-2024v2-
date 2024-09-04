@@ -12,25 +12,25 @@ const uberData = [
   {
     id: 1,
     name: 'Uber',
-    image: template.uberOne,
+    image: template.quOne,
     gifUrl:'',
   },
   {
     id: 2,
     name: 'Uber2',
-    image: template.uberTwo,
+    image: template.quTwo,
     gifUrl: '',
   },
   {
     id: 3,
     name: 'Uber3',
-    image: template.uberThree,
+    image: template.quThree,
     gifUrl: '',
   },
 ]
 
 
-const UberDemo = () => {
+const QueenDemo = () => {
   const [selectedPhoneId, setSelectedPhoneId] = useState<number>(1);
 
   const handleSelectedPhone = (id: number) => {
@@ -42,8 +42,8 @@ const UberDemo = () => {
       <div className='w-full md:px-20 py-5 space-y-5'>
         <div className='w-full flex flex-col rounded-2xl p-5 space-y-3 shadow-lg'>
           <div className='w-full flex flex-col gap-3'>
-            <h1 className='text-3xl sm:text-5xl font-bold'>Ucar.</h1>
-            <p className='text-xl font-medium'>Let's take taxi</p>
+            <h1 className='text-3xl sm:text-5xl font-bold'>Drama Video.</h1>
+            <p className='text-xl font-medium'>Follow your like video</p>
           </div>
 
           <div className='flex overflow-x-scroll custom-scrollbar whitespace-nowrap'>
@@ -93,4 +93,4 @@ const UberDemo = () => {
   )
 }
 
-export default UberDemo
+export default QueenDemo

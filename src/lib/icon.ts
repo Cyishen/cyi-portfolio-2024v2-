@@ -24,9 +24,16 @@ import app from "../../public/app.png";
 import duoOne from "../../public/template/duo1.png";
 import duoTwo from "../../public/template/duo2.png";
 import duoThree from "../../public/template/duo3.png";
+
 import uberOne from "../../public/template/uber1.jpg";
 import uberTwo from "../../public/template/uber2.jpg";
 import uberThree from "../../public/template/uber3.jpg";
+import quOne from "../../public/template/qu1.png";
+import quTwo from "../../public/template/qu2.png";
+import quThree from "../../public/template/qu3.png";
+
+import appleStore from "../../public/media/applestore.svg";
+import googlePlay from "../../public/media/googleplay.svg";
 
 export const template = {
   duoOne,
@@ -35,6 +42,9 @@ export const template = {
   uberOne,
   uberTwo,
   uberThree,
+  quOne,
+  quTwo,
+  quThree
 }
 
 export const icons = {
@@ -43,6 +53,8 @@ export const icons = {
   drama,
   phone,
   email,
+  appleStore,
+  googlePlay,
 }
 
 export const frontend = {

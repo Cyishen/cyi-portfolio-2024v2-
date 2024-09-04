@@ -1,3 +1,4 @@
+import QueenDemo from "./expo/QueenDemo"
 import UberDemo from "./expo/UberDemo"
 
 
@@ -9,8 +10,8 @@ const appProject = [
   },
   {
     id:2,
-    title: 'Tear of queen App',
-    path: <UberDemo />
+    title: 'Drama App',
+    path: <QueenDemo />
   },
 ]
 
