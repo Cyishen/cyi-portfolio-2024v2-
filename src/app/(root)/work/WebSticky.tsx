@@ -1,24 +1,29 @@
-import UberDemo from "./expo/UberDemo"
+import DuoDemo from "./web/DuoDemo"
 
 
-const appProject = [
+const webProject = [
   {
     id:1,
-    title: 'UCar App',
-    path: <UberDemo />
+    title: 'Ai travel platform',
+    path: <DuoDemo />
   },
   {
     id:2,
-    title: 'Tear of queen App',
-    path: <UberDemo />
+    title: 'Duo platform',
+    path: <DuoDemo />
+  },
+  {
+    id:3,
+    title: 'Print platform',
+    path: <DuoDemo />
   },
 ]
 
 
-const ExpoSticky = () => {
+const WebSticky = () => {
   return (
     <div className='w-full'>
-      {appProject.map((info, index) => (
+      {webProject.map((info, index) => (
         <div 
           key={info.id} 
           className='sticky'
@@ -35,4 +40,4 @@ const ExpoSticky = () => {
   )
 }
 
-export default ExpoSticky
+export default WebSticky

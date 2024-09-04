@@ -21,6 +21,21 @@ import figma from "../../public/skill/figma.svg";
 
 import productImage from "../../public/product-image.png";
 
+import duoOne from "../../public/template/duo1.png";
+import duoTwo from "../../public/template/duo2.png";
+import duoThree from "../../public/template/duo3.png";
+import uberOne from "../../public/template/uber1.jpg";
+import uberTwo from "../../public/template/uber2.jpg";
+import uberThree from "../../public/template/uber3.jpg";
+
+export const template = {
+  duoOne,
+  duoTwo,
+  duoThree,
+  uberOne,
+  uberTwo,
+  uberThree,
+}
 
 export const icons = {
   browse,

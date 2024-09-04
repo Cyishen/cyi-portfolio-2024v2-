@@ -8,22 +8,24 @@ import Mac from '@/components/Mac'
 
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import { template } from '@/lib/icon'
+
 
 const webData = [
   {
     id: 1,
     name: 'Wbe1',
-    image: '/template/duo1.png',
+    image: template.duoOne,
   },
   {
     id: 2,
     name: 'Wbe2',
-    image: '/template/duo2.png',
+    image: template.duoTwo,
   },
   {
     id: 3,
     name: 'Wbe3',
-    image: '/template/duo3.png',
+    image: template.duoThree,
   },
 ]
 
@@ -65,11 +67,11 @@ const DuoDemo = () => {
               >
                 {selectedPhoneId === item.id ? (
                   <Mac
-                    imgSrc={item.image} 
+                    imgSrc={item.image.src} 
                   />
                 ) : (
                 <img
-                    src={item.image}
+                    src={item.image.src}
                     alt={item.name}
                     width={216}
                     height={216}

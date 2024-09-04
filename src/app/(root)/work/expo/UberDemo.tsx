@@ -7,25 +7,27 @@ import Hashtags from '../Hashtag'
 
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import { template } from '@/lib/icon'
+
 
 const uberData = [
   {
     id: 1,
     name: 'Uber',
-    image: '/template/uber1.jpg',
+    image: template.uberOne,
     gifUrl:'',
   },
   {
     id: 2,
     name: 'Uber2',
-    image: '/template/uber2.jpg',
-    gifUrl: 'https://cloud.appwrite.io/v1/storage/buckets/6540b1adafb3e0b6c69c/files/66d6e5cec4795ddbab35/view?project=65406b8287948e7ae18a&project=65406b8287948e7ae18a&mode=admin',
+    image: template.uberTwo,
+    gifUrl: '',
   },
   {
     id: 3,
     name: 'Uber3',
-    image: '/template/uber3.jpg',
-    gifUrl: 'https://cloud.appwrite.io/v1/storage/buckets/6540b1adafb3e0b6c69c/files/66d6e7acdf652b7c75a6/view?project=65406b8287948e7ae18a&project=65406b8287948e7ae18a&mode=admin',
+    image: template.uberThree,
+    gifUrl: '',
   },
 ]
 
@@ -73,7 +75,7 @@ const UberDemo = () => {
                     />
                   ): (
                     <Phone
-                    imgSrc={item.image}
+                    imgSrc={item.image.src}
                   />
                   )
                 ) : (
