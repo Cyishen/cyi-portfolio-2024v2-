@@ -6,12 +6,14 @@ import { useState } from 'react'
 import Hashtags from '../Hashtag'
 import Mac from '@/components/Mac'
 
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 const webData = [
   {
     id: 1,
     name: 'Wbe1',
-    image: '/template/duo2.png',
+    image: '/template/duo1.png',
   },
   {
     id: 2,
@@ -21,12 +23,12 @@ const webData = [
   {
     id: 3,
     name: 'Wbe3',
-    image: '/template/duo2.png',
+    image: '/template/duo3.png',
   },
 ]
 
 
-const AiTripDemo = () => {
+const DuoDemo = () => {
   const [selectedPhoneId, setSelectedPhoneId] = useState<number>(1);
 
   const handleSelectedPhone = (id: number) => {
@@ -34,17 +36,23 @@ const AiTripDemo = () => {
   };
 
   return (
-    <div className='w-full flex flex-col p-3 md:p-20 overflow-hidden'>
-      <div className='w-full md:px-20 py-5'>
-        <div className='w-full flex flex-col bg-white rounded-2xl p-5 mb-5'>
-          <div className='w-full flex flex-col gap-3 mb-5'>
+    <div className='w-full flex flex-col p-3 md:p-20 overflow-hidden bg-white'>
+      <div className='w-full md:px-20 py-5 space-y-5'>
+        <div className='w-full flex flex-col rounded-2xl p-5 mb-5 space-y-3 shadow-lg'>
+          <div className='w-full flex flex-col gap-3'>
             <h1 className='text-3xl sm:text-5xl font-bold'>Title.</h1>
             <p className='text-xl font-medium'>Something here</p>
           </div>
 
           <div className='flex overflow-x-scroll custom-scrollbar whitespace-nowrap'>
-            <Hashtags tags={['react', 'nextjs', 'tailwindCSS', 'stripe']} />
+            <Hashtags tags={['nextjs', 'tailwindCSS', 'stripe', 'Neon database', 'drizzle ORM']} />
           </div>
+
+          <Link href='/' target='_blank'>
+            <Button size='sm' className='w-1/3'>
+              Demo
+            </Button>
+          </Link>
         </div>
 
         <div className='flex overflow-x-scroll custom-scrollbar whitespace-wrap'>
@@ -77,4 +85,4 @@ const AiTripDemo = () => {
   )
 }
 
-export default AiTripDemo
+export default DuoDemo

@@ -9,7 +9,6 @@ const BarSticky = () => {
   const [scrolled, setScrolled] = useState(false)
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    console.log('Scroll Y position:', latest);
     if (latest > 56 && !scrolled) {
       setScrolled(true)
     } else if(latest <= 56) {

@@ -4,7 +4,8 @@ import Wrapper from '@/components/Wrapper'
 import { TextEffect } from '@/lib/framer-motion/TextEffect'
 
 import UberDemo from './expo/UberDemo'
-import AiTripDemo from './web/AiTripDemo'
+import DuoDemo from './web/DuoDemo'
+import ExpoSticky from './ExpoSticky'
 
 
 const WorkPage = () => {
@@ -21,12 +22,14 @@ const WorkPage = () => {
         </div>
       </Wrapper>
 
-      <div className='w-full flex justify-center items-center bg-yellow-50'>
-        <UberDemo />
-      </div>
+      <ExpoSticky />
 
-      <div className='w-full flex justify-center items-center bg-yellow-100'>
-        <AiTripDemo />
+      {/* <div className='w-full flex justify-center items-center bg-white'>
+        <UberDemo />
+      </div> */}
+
+      <div className='w-full flex justify-center items-center bg-gray-50'>
+        <DuoDemo />
       </div>
     </div>
   )
