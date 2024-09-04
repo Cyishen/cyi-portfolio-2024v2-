@@ -1,5 +1,3 @@
-"use client"
-
 import Wrapper from '@/components/Wrapper'
 import { TextEffect } from '@/lib/framer-motion/TextEffect'
 

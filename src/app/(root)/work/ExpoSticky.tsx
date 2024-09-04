@@ -23,7 +23,7 @@ const ExpoSticky = () => {
           key={info.id} 
           className='sticky'
           style={{
-            top: window.innerWidth < 480 ? `calc(0px + ${index * 0}px)` : `calc(-50px + ${index * 0}px)`,
+            top: `calc(-10px + ${index * 0}px)`,
           }}
         >
           <div className='w-full overflow-hidden mb-10'>
