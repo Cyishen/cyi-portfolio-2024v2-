@@ -19,7 +19,7 @@ import framer from "../../public/skill/framer-motion.svg";
 import gsap from "../../public/skill/gsap.svg";
 import figma from "../../public/skill/figma.svg";
 
-import productImage from "../../public/product-image.png";
+import app from "../../public/app.png";
 
 import duoOne from "../../public/template/duo1.png";
 import duoTwo from "../../public/template/duo2.png";
@@ -66,4 +66,4 @@ export const motionIcon = {
   figma,
 }
 
-export const images = { productImage }
+export const images = { app }

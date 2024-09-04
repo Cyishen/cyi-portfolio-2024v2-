@@ -23,9 +23,9 @@ const threeTabs = [
     title: '模型訓練',
     icon: "/assets/lottie/vroom.lottie",
     isNew: false,
-    backgroundPositionX: 98,
-    backgroundPositionY: 100,
-    backgroundSizeX: 135,
+    backgroundPositionX: 10,
+    backgroundPositionY: 80,
+    backgroundSizeX: 160,
     show: true,
   },
   {
@@ -34,8 +34,8 @@ const threeTabs = [
     icon: "/assets/lottie/vroom.lottie",
     isNew: false,
     backgroundPositionX: 100,
-    backgroundPositionY: 27,
-    backgroundSizeX: 160,
+    backgroundPositionY: 26,
+    backgroundSizeX: 180,
     show: true,
   },
 ]
@@ -110,9 +110,9 @@ const ThreeFeatureTab = () => {
 
       <div className='px-4 pt-4 mt-1'>
         <motion.div
-          className='aspect-video bg-cover rounded-t-2xl'
+          className='aspect-video bg-cover'
           style={{
-            backgroundImage: `url(${images.productImage.src})`,
+            backgroundImage: `url(${images.app.src})`,
             backgroundPosition: backgroundPosition,
             backgroundSize: backgroundSize
           }}
