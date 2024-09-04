@@ -12,19 +12,19 @@ const uberData = [
   {
     id: 1,
     name: 'Uber',
-    image: '/template/uber1.png',
+    image: '/template/uber1.jpg',
     gifUrl:'',
   },
   {
     id: 2,
     name: 'Uber2',
-    image: '/template/uber2.png',
+    image: '/template/uber2.jpg',
     gifUrl: 'https://cloud.appwrite.io/v1/storage/buckets/6540b1adafb3e0b6c69c/files/66d6e5cec4795ddbab35/view?project=65406b8287948e7ae18a&project=65406b8287948e7ae18a&mode=admin',
   },
   {
     id: 3,
     name: 'Uber3',
-    image: '/template/uber3.png',
+    image: '/template/uber3.jpg',
     gifUrl: 'https://cloud.appwrite.io/v1/storage/buckets/6540b1adafb3e0b6c69c/files/66d6e7acdf652b7c75a6/view?project=65406b8287948e7ae18a&project=65406b8287948e7ae18a&mode=admin',
   },
 ]
