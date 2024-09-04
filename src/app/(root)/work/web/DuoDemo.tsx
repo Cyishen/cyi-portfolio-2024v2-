@@ -38,7 +38,7 @@ const DuoDemo = () => {
   };
 
   return (
-    <div className='w-full flex flex-col p-3 md:p-20 overflow-hidden bg-white'>
+    <div className='w-full flex flex-col p-3 md:p-20 overflow-hidden bg-gray-50'>
       <div className='w-full md:px-20 py-5 space-y-5'>
         <div className='w-full flex flex-col rounded-2xl p-5 mb-5 space-y-3 shadow-lg'>
           <div className='w-full flex flex-col gap-3'>

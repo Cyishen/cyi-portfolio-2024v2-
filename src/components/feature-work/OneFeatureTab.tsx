@@ -122,7 +122,7 @@ const OneFeatureTab = () => {
         ))}
       </div>
 
-      <div className='px-4 pt-4 mt-1'>
+      <div className='px-2 md:px-32 pt-4 md:pt-2'>
         <motion.div
           className='aspect-video bg-cover'
           style={{

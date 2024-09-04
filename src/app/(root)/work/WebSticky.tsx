@@ -31,7 +31,7 @@ const WebSticky = () => {
             top: `calc(-10px + ${index * 0}px)`,
           }}
         >
-          <div className='w-full overflow-hidden mb-10'>
+          <div className='w-full overflow-hidden'>
             {info.path}
           </div>
         </div>

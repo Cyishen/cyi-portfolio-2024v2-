@@ -31,19 +31,21 @@ const uberData = [
 
 
 const QueenDemo = () => {
-  const [selectedPhoneId, setSelectedPhoneId] = useState<number>(1);
+  const [selectedPhoneId, setSelectedPhoneId] = useState<number>(2);
 
   const handleSelectedPhone = (id: number) => {
     setSelectedPhoneId(id);
   };
 
   return (
-    <div className='w-full flex flex-col p-3 md:p-20 overflow-hidden bg-white'>
+    <div className='w-full flex flex-col p-3 md:p-20 overflow-hidden bg-gray-50 border-t rounded-t-3xl'>
+      <div className="absolute top-5 left-1/2 -translate-x-1/2 h-2 w-14 rounded-full bg-gray-300" />
+      
       <div className='w-full md:px-20 py-5 space-y-5'>
         <div className='w-full flex flex-col rounded-2xl p-5 space-y-3 shadow-lg'>
           <div className='w-full flex flex-col gap-3'>
             <h1 className='text-3xl sm:text-5xl font-bold'>Drama Video.</h1>
-            <p className='text-xl font-medium'>Follow your like video</p>
+            <p className='text-xl font-medium'>Follow you like</p>
           </div>
 
           <div className='flex overflow-x-scroll custom-scrollbar whitespace-nowrap'>
