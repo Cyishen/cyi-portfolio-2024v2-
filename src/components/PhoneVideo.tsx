@@ -26,7 +26,7 @@ const PhoneVideo = ({ imgSrc, dark = false, className, ...props }: PhoneProps) =
       />
 
       <div className='absolute -z-10 inset-0 flex justify-center items-center'>
-        <div className='flex h-full w-fit sm:py-1.5'>
+        <div className='flex h-full w-fit py-1 sm:py-1.5'>
           <video
             className='object-cover min-w-full min-h-full rounded-2xl sm:rounded-3xl' 
             src={imgSrc}
