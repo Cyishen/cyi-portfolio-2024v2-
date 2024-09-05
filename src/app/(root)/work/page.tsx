@@ -1,8 +1,9 @@
 import Wrapper from '@/components/Wrapper'
 import { TextEffect } from '@/lib/framer-motion/TextEffect'
 
-import ExpoSticky from './ExpoSticky'
 import WebSticky from './WebSticky'
+import UberDemo from './expo/UberDemo'
+import QueenDemo from './expo/QueenDemo'
 
 
 const WorkPage = () => {
@@ -19,7 +20,9 @@ const WorkPage = () => {
         </div>
       </Wrapper>
 
-      <ExpoSticky />
+      <UberDemo />
+      <QueenDemo />
+
       <WebSticky />
     </div>
   )

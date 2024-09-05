@@ -25,7 +25,7 @@ const Mac = ({ imgSrc, dark = false, className, ...props }: MacProps) => {
         alt='mac frame'
       />
 
-      <div className='absolute -z-10 inset-0 px-5 pb-3 pt-0.5 sm:pb-6 sm:px-10 sm:pt-1'>
+      <div className='absolute -z-10 inset-0'>
         <img
           className='object-cover min-w-full min-h-full'
           src={imgSrc}

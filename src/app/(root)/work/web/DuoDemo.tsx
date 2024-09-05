@@ -38,7 +38,7 @@ const DuoDemo = () => {
   };
 
   return (
-    <div className='w-full flex flex-col p-3 md:p-20 overflow-hidden bg-gray-50'>
+    <div className='w-full flex flex-col p-3 md:p-20 overflow-hidden bg-white border-t rounded-t-3xl'>
       <div className='w-full md:px-20 py-5 space-y-5'>
         <div className='w-full flex flex-col rounded-2xl p-5 mb-5 space-y-3 shadow-lg'>
           <div className='w-full flex flex-col gap-3'>
@@ -62,7 +62,7 @@ const DuoDemo = () => {
             {webData.map((item) => (
               <div
                 key={item.id}
-                // onMouseEnter={() => handleSelectedPhone(item.id)}
+                onMouseEnter={() => handleSelectedPhone(item.id)}
                 className='flex cursor-pointer w-48 sm:w-96'
               >
                 {selectedPhoneId === item.id ? (
@@ -75,7 +75,7 @@ const DuoDemo = () => {
                     alt={item.name}
                     width={216}
                     height={216}
-                    className='object-contain w-40 sm:w-[320px] sm:h-[200px] mx-auto sm:pt-1'
+                    className='object-contain w-full' 
                   />
                 )}
               </div>
