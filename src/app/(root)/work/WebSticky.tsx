@@ -1,11 +1,13 @@
 import DuoDemo from "./web/DuoDemo"
+import PrintDemo from "./web/PrintDemo"
+import TripDemo from "./web/TripDemo"
 
 
 const webProject = [
   {
     id:1,
     title: 'Ai travel platform',
-    path: <DuoDemo />
+    path: <TripDemo />
   },
   {
     id:2,
@@ -15,7 +17,7 @@ const webProject = [
   {
     id:3,
     title: 'Print platform',
-    path: <DuoDemo />
+    path: <PrintDemo />
   },
 ]
 
@@ -28,7 +30,7 @@ const WebSticky = () => {
           key={info.id} 
           className='sticky'
           style={{
-            top: `calc(-10px + ${index * 0}px)`,
+            top: `calc(10px + ${index * 82}px)`,
           }}
         >
           <div className='w-full overflow-hidden'>

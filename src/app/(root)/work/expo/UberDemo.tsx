@@ -3,11 +3,10 @@
 import Phone from '@/components/Phone'
 import Image from 'next/image'
 import { useState } from 'react'
-import Hashtags from '../Hashtag'
 
-import { icons, template } from '@/lib/icon'
+import { template } from '@/lib/icon'
 import PhoneVideo from '@/components/PhoneVideo'
-
+import ProjectHeader from '../ProjectHeader'
 
 const uberData = [
   {
@@ -40,25 +39,24 @@ const UberDemo = () => {
 
   return (
     <div className='w-full flex flex-col p-3 md:p-20 overflow-hidden bg-white'>
-      <div className='w-full md:px-20 py-5 space-y-5'>
-        <div className='w-full flex flex-col rounded-2xl p-5 space-y-3 shadow-lg'>
-          <div className='w-full flex flex-col gap-3'>
-            <h1 className='text-3xl sm:text-5xl font-bold'>Ucar.</h1>
-            <p className='text-xl font-medium'>Let's take taxi</p>
-          </div>
-
-          <div className='flex overflow-x-scroll custom-scrollbar whitespace-nowrap'>
-            <Hashtags tags={['expo', 'clerk', 'tailwindCSS']} />
-          </div>
-
-          <div className='flex gap-2'>
-            <Image src={icons.appleStore} height={30} alt='apple' />
-            <Image src={icons.googlePlay} height={30} alt='google' />
-          </div>
-        </div>
+      <div className='w-full md:px-20 py-5 space-y-5'>        
+        <ProjectHeader 
+          titleWord={'搭車'} 
+          secondWord={'用途: Uber clone'} 
+          tags={['react native','expo', 'clerk', 'tailwindCSS']} 
+          descriptionWords={[
+            'React Native 運用',
+            'Expo 運用',
+            '地圖導航',
+          ]}
+          bgColor='bg-black'
+          textColor='text-white'
+          descriptionColor='text-white'
+          showStore={true} 
+        />
 
         <div className='flex overflow-x-scroll custom-scrollbar whitespace-wrap'>
-          <div className='flex items-center justify-center gap-5'>
+          <div className='flex items-center justify-center gap-5 h-[280px] sm:h-[500px]'>
             {uberData.map((item) => (
               <div
                 key={item.id}

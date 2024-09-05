@@ -5,10 +5,13 @@ import WebSticky from './WebSticky'
 import UberDemo from './expo/UberDemo'
 import QueenDemo from './expo/QueenDemo'
 
+import Other from './Other'
+
 
 const WorkPage = () => {
 
   return (
+    <>
     <div className='flex flex-col w-full md:py-24'>
       <Wrapper>
         <div className='flex flex-col items-center w-full mb-10'>
@@ -25,6 +28,9 @@ const WorkPage = () => {
 
       <WebSticky />
     </div>
+
+    <Other />
+    </>
   )
 }
 

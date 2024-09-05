@@ -3,29 +3,29 @@
 import Phone from '@/components/Phone'
 import Image from 'next/image'
 import { useState } from 'react'
-import Hashtags from '../Hashtag'
 
-import { icons, template } from '@/lib/icon'
+import { template } from '@/lib/icon'
+import ProjectHeader from '../ProjectHeader'
 
 
-const uberData = [
+const queData = [
   {
     id: 1,
     name: 'Uber',
     image: template.quOne,
-    gifUrl:'',
+    videoUrl:'',
   },
   {
     id: 2,
     name: 'Uber2',
     image: template.quTwo,
-    gifUrl: '',
+    videoUrl:'',
   },
   {
     id: 3,
     name: 'Uber3',
     image: template.quThree,
-    gifUrl: '',
+    videoUrl:'',
   },
 ]
 
@@ -39,37 +39,33 @@ const QueenDemo = () => {
 
   return (
     <div className='w-full flex flex-col p-3 md:p-20 overflow-hidden bg-white'>
-      <div className="absolute top-5 left-1/2 -translate-x-1/2 h-2 w-14 rounded-full bg-gray-300" />
-      
       <div className='w-full md:px-20 py-5 space-y-5'>
-        <div className='w-full flex flex-col rounded-2xl p-5 space-y-3 shadow-lg'>
-          <div className='w-full flex flex-col gap-3'>
-            <h1 className='text-3xl sm:text-5xl font-bold'>Drama Video.</h1>
-            <p className='text-xl font-medium'>Follow you like</p>
-          </div>
-
-          <div className='flex overflow-x-scroll custom-scrollbar whitespace-nowrap'>
-            <Hashtags tags={['expo', 'clerk', 'tailwindCSS']} />
-          </div>
-
-          <div className='flex gap-2'>
-            <Image src={icons.appleStore} height={30} alt='apple' />
-            <Image src={icons.googlePlay} height={30} alt='google' />
-          </div>
-        </div>
+        <ProjectHeader 
+          titleWord={'影音平台 Drama'} 
+          secondWord={'用途: 粉絲分享追蹤喜愛演員影片'} 
+          tags={['react native', 'clerk', 'tailwindCSS']} 
+          descriptionWords={[
+            'React Native 運用',
+            'Expo 運用',
+          ]}
+          bgColor='bg-black'
+          textColor='text-white'
+          descriptionColor='text-white'
+          showStore={true} 
+        />
 
         <div className='flex overflow-x-scroll custom-scrollbar whitespace-wrap'>
           <div className='flex items-center justify-center gap-5'>
-            {uberData.map((item) => (
+            {queData.map((item) => (
               <div
                 key={item.id}
                 onMouseEnter={() => handleSelectedPhone(item.id)}
                 className='flex cursor-pointer w-32 sm:w-56'
               >
                 {selectedPhoneId === item.id ? (
-                  item.gifUrl ? (
+                  item.videoUrl ? (
                     <Phone
-                      imgSrc={item.gifUrl}
+                      imgSrc={item.videoUrl}
                     />
                   ): (
                     <Phone

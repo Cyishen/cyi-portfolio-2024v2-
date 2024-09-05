@@ -25,9 +25,9 @@ const webData = [
   },
 ]
 
-const demoUrl = 'https://duo-nine.vercel.app/'
+const demoUrl = 'https://printer-cy.vercel.app/'
 
-const DuoDemo = () => {
+const PrintDemo = () => {
   const [selectedPhoneId, setSelectedPhoneId] = useState<number>(1);
 
   const handleSelectedPhone = (id: number) => {
@@ -35,19 +35,18 @@ const DuoDemo = () => {
   };
 
   return (
-    <div className='w-full flex flex-col py-5 px-3 md:p-20 overflow-hidden bg-gray-50 border-t rounded-t-3xl'>
+    <div className='w-full flex flex-col py-5 px-3 md:p-20 overflow-hidden bg-white border-t rounded-t-3xl'>
       <div className="absolute top-5 md:top-8 left-1/2 -translate-x-1/2 h-2 w-14 rounded-full bg-gray-300" />
 
       <div className='w-full md:px-20 py-5 space-y-5'>
         <ProjectHeader 
-          titleWord={'語言學習 Language'} 
-          secondWord={'用途: 學習語言'} 
-          tags={['nextjs', 'tailwindCSS', 'stripe', 'Neon database', 'drizzle ORM']} 
+          titleWord={'列印 Print'} 
+          secondWord={'用途: 上傳照片列印商品'} 
+          tags={['nextjs', 'tailwindCSS', 'stripe', 'Neon database', 'drizzle ORM', 'uploadthing']} 
           descriptionWords={[
-            '資料庫記錄用戶學習進度',
-            'React Admin後台管理課程',
+            '資料庫儲存上傳圖片與修改後圖片',
             '身份驗證, 前後端Api串接',
-            '金流串接Stripe 訂閱',
+            '用戶訂單追蹤與管理付款狀態',
           ]}
           bgColor='bg-black'
           textColor='text-white'
@@ -87,4 +86,4 @@ const DuoDemo = () => {
   )
 }
 
-export default DuoDemo
+export default PrintDemo
