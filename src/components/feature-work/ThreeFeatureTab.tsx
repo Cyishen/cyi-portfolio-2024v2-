@@ -24,8 +24,8 @@ const threeTabs = [
     icon: "/assets/lottie/vroom.lottie",
     isNew: false,
     backgroundPositionX: 10,
-    backgroundPositionY: 80,
-    backgroundSizeX: 160,
+    backgroundPositionY: 77,
+    backgroundSizeX: 180,
     show: true,
   },
   {

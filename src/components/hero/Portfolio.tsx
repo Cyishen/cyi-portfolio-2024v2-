@@ -1,4 +1,4 @@
-import TextSpan from '@/lib/framer-motion/TextSpan'
+import TextSpan from '@/components/framer-motion/TextSpan'
 import Wrapper from '../Wrapper'
 
 const Portfolio = () => {

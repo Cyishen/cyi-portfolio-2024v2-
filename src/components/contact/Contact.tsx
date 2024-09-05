@@ -3,7 +3,8 @@ import Wrapper from '../Wrapper'
 import Link from 'next/link'
 import Image from 'next/image'
 import { icons } from '@/lib/icon'
-
+import { AnimatedNumberInView } from '../AnimatedNumberInView'
+import { Star } from 'lucide-react'
 
 const Contact = () => {
 
@@ -29,6 +30,20 @@ const Contact = () => {
               <Image src={icons.email} alt='email' width={28} height={28} />
               <Copy title='halu0614@gmail.com' />
             </div>
+          </div>
+
+          <div className='flex flex-col items-center justify-center mt-10 '>
+            <p className='font-extrabold text-2xl md:text-3xl'>Satisfy </p>
+
+            <div className='flex m-2'>
+              <Star className='h-4 w-4 text-star-2 fill-star-2' />
+              <Star className='h-4 w-4 text-star-2 fill-star-2' />
+              <Star className='h-4 w-4 text-star-2 fill-star-2' />
+              <Star className='h-4 w-4 text-star-2 fill-star-2' />
+              <Star className='h-4 w-4 text-star-2 fill-star-2' />
+            </div>
+
+            <AnimatedNumberInView />
           </div>
 
           <div className="w-full flex flex-col items-center justify-center mt-auto">

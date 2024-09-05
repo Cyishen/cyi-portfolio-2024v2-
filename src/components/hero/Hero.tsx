@@ -1,6 +1,6 @@
 "use client"
 
-import { TextEffect } from "../../lib/framer-motion/TextEffect";
+import { TextEffect } from "../framer-motion/TextEffect";
 import { Button } from "../ui/button"
 import { SquareTerminal, StarIcon } from 'lucide-react';
 import Wrapper from "../Wrapper";
