@@ -18,8 +18,8 @@ const Phone = ({ imgSrc, dark = false, className, ...props }: PhoneProps) => {
       <img
         src={
           dark
-            ? '/iphone_8961731.png'
-            : '/iphone_8961731.png'
+            ? '/iphone.png'
+            : '/iphone.png'
         }
         className='pointer-events-none z-50 select-none'
         alt='phone frame'
@@ -27,7 +27,7 @@ const Phone = ({ imgSrc, dark = false, className, ...props }: PhoneProps) => {
 
       <div className='absolute -z-10 inset-0'>
         <img
-          className='object-cover min-w-full min-h-full sm:pb-2 pt-1 px-1 sm:p-1'
+          className='object-cover min-w-full min-h-full'
           src={imgSrc}
           alt='display image'
         />

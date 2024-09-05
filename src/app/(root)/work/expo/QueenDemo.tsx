@@ -70,7 +70,6 @@ const QueenDemo = () => {
                   item.gifUrl ? (
                     <Phone
                       imgSrc={item.gifUrl}
-                      className='rounded-[22px] sm:rounded-[38px]'
                     />
                   ): (
                     <Phone
@@ -83,7 +82,7 @@ const QueenDemo = () => {
                     alt={item.name}
                     width={216}
                     height={216}
-                    className='object-contain min-w-28 mx-2'
+                    className='object-contain min-w-28'
                   />
                 )}
               </div>

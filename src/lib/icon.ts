@@ -25,9 +25,9 @@ import duoOne from "../../public/template/duo1.png";
 import duoTwo from "../../public/template/duo2.png";
 import duoThree from "../../public/template/duo3.png";
 
-import uberOne from "../../public/template/uber1.jpg";
-import uberTwo from "../../public/template/uber2.jpg";
-import uberThree from "../../public/template/uber3.jpg";
+import uberOne from "../../public/template/uber1.png";
+import uberTwo from "../../public/template/uber2.png";
+import uberThree from "../../public/template/uber3.png";
 import quOne from "../../public/template/qu1.png";
 import quTwo from "../../public/template/qu2.png";
 import quThree from "../../public/template/qu3.png";
@@ -44,7 +44,7 @@ export const template = {
   uberThree,
   quOne,
   quTwo,
-  quThree
+  quThree,
 }
 
 export const icons = {
