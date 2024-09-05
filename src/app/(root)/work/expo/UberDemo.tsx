@@ -6,6 +6,7 @@ import { useState } from 'react'
 import Hashtags from '../Hashtag'
 
 import { icons, template } from '@/lib/icon'
+import PhoneVideo from '@/components/PhoneVideo'
 
 
 const uberData = [
@@ -13,19 +14,19 @@ const uberData = [
     id: 1,
     name: 'Uber',
     image: template.uberOne,
-    gifUrl:'',
+    videoUrl:'',
   },
   {
     id: 2,
     name: 'Uber2',
     image: template.uberTwo,
-    gifUrl: '',
+    videoUrl: '/welcome.mp4',
   },
   {
     id: 3,
     name: 'Uber3',
     image: template.uberThree,
-    gifUrl: '',
+    videoUrl: '',
   },
 ]
 
@@ -65,9 +66,9 @@ const UberDemo = () => {
                 className='flex cursor-pointer w-32 sm:w-56'
               >
                 {selectedPhoneId === item.id ? (
-                  item.gifUrl ? (
-                    <Phone
-                      imgSrc={item.gifUrl}
+                  item.videoUrl ? (
+                    <PhoneVideo
+                      imgSrc={item.videoUrl}
                     />
                   ): (
                     <Phone
