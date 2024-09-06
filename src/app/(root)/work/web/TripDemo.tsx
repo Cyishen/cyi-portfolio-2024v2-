@@ -43,7 +43,7 @@ const TripDemo = () => {
           tags={['vite', 'ai gemini', 'tailwindCSS', 'firebase', 'google map api']} 
           descriptionWords={[
             'Gemini api串接, 關鍵提示詞讓Gemini給出對應的行程',
-            '透過Google map 拿到目的地等資料圖片',
+            '透過Google map 拿到目的地資料圖片',
           ]}
           bgColor='bg-black'
           textColor='text-white'
@@ -71,7 +71,7 @@ const TripDemo = () => {
                     alt={item.name}
                     width={216}
                     height={216}
-                    className='object-contain w-full shadow-xl' 
+                    className='object-contain w-full' 
                   />
                 )}
               </div>

@@ -56,7 +56,7 @@ const MobileMenu = () => {
 
           <div 
             id="outside-close" 
-            className="absolute right-0 top-14 w-2/3 h-[calc(50vh-54px)] bg-white font-medium text-xl z-50 rounded-bl-xl shadow-lg"
+            className="absolute right-0 top-14 w-2/3 h-[calc(50vh-54px)] bg-white font-medium text-xl z-[60] rounded-bl-xl shadow-lg"
             onClick={handleCloseMenu}
             >
             <div className="flex flex-col gap-3 w-full h-full p-5">

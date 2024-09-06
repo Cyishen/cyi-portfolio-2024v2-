@@ -74,7 +74,7 @@ const PrintDemo = () => {
                     alt={item.name}
                     width={216}
                     height={216}
-                    className='object-contain w-full shadow-xl' 
+                    className='object-contain w-full' 
                   />
                 )}
               </div>

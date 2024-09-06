@@ -38,7 +38,7 @@ const UberDemo = () => {
   };
 
   return (
-    <div className='w-full flex flex-col p-3 md:p-20 overflow-hidden bg-white'>
+    <div className='w-full flex flex-col p-3 md:p-20 overflow-hidden'>
       <div className='w-full md:px-20 py-5 space-y-5'>        
         <ProjectHeader 
           titleWord={'搭車'} 
