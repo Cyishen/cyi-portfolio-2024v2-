@@ -31,14 +31,24 @@ import uberThree from "../../public/template/uber3.png";
 import quOne from "../../public/template/qu1.png";
 import quTwo from "../../public/template/qu2.png";
 import quThree from "../../public/template/qu3.png";
+import tripOne from "../../public/template/trip1.png";
+import tripTwo from "../../public/template/trip2.png";  
+import tripThree from "../../public/template/trip3.png";
+import printOne from "../../public/template/print1.png";
+import printTwo from "../../public/template/print2.png";  
+import printThree from "../../public/template/print3.png";
 
 import appleStore from "../../public/media/applestore.svg";
 import googlePlay from "../../public/media/googleplay.svg";
 
-import nail from "../../public/displays/104-nail.png"
+import nail from "../../public/displays/gif/d-nail.gif"
+import gpt from "../../public/displays/gif/d-gpt.gif"
+import print from "../../public/displays/gif/d-print.gif"
+import duo from "../../public/displays/gif/d-duo.gif"
 import chat from "../../public/displays/104-chat.png"
 import burger from "../../public/displays/104-burger.png"
 import social from "../../public/displays/104-social.png"
+
 import apple from "../../public/displays/gif/apple.gif"
 import futurama from "../../public/displays/gif/futurama.gif"
 import netflix from "../../public/displays/gif/netflix.gif"
@@ -54,7 +64,10 @@ export const displays = {
   futurama,
   netflix,
   parallax,
-  twitter
+  twitter,
+  duo,
+  gpt,
+  print,
 }
 
 export const template = {
@@ -67,6 +80,12 @@ export const template = {
   quOne,
   quTwo,
   quThree,
+  tripOne,
+  tripTwo,
+  tripThree,
+  printOne,
+  printTwo,
+  printThree,
 }
 
 export const icons = {

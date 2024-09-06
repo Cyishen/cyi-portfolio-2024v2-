@@ -11,17 +11,17 @@ const webData = [
   {
     id: 1,
     name: 'Wbe1',
-    image: template.duoOne,
+    image: template.tripOne,
   },
   {
     id: 2,
     name: 'Wbe2',
-    image: template.duoTwo,
+    image: template.tripTwo,
   },
   {
     id: 3,
     name: 'Wbe3',
-    image: template.duoThree,
+    image: template.tripThree,
   },
 ]
 
@@ -37,10 +37,10 @@ const TripDemo = () => {
   return (
     <div className='w-full flex flex-col py-5 px-3 md:px-20 md:py-14 overflow-hidden'>
       <div className='w-full md:px-20'>
-        <ProjectHeader 
-          titleWord={'旅遊'} 
-          secondWord={'用途: 透過AI Gemini 規劃旅遊行程'} 
-          tags={['vite', 'ai gemini', 'tailwindCSS', 'firebase', 'google map api']} 
+        <ProjectHeader
+          titleWord={'旅遊'}
+          secondWord={'用途: 透過AI Gemini 規劃旅遊行程'}
+          tags={['vite', 'ai gemini', 'tailwindCSS', 'firebase', 'google map api']}
           descriptionWords={[
             'Gemini api串接, 關鍵提示詞讓Gemini給出對應的行程',
             '透過Google map 拿到目的地資料圖片',
@@ -50,7 +50,7 @@ const TripDemo = () => {
           descriptionColor='text-white'
           showStore={false}
           demoUrl={demoUrl}
-          buttonVariant='destructive' 
+          buttonVariant='destructive'
         />
 
         <div className='flex overflow-x-scroll custom-scrollbar whitespace-wrap'>
@@ -63,15 +63,15 @@ const TripDemo = () => {
               >
                 {selectedPhoneId === item.id ? (
                   <Mac
-                    imgSrc={item.image.src} 
+                    imgSrc={item.image.src}
                   />
                 ) : (
-                <img
+                  <img
                     src={item.image.src}
                     alt={item.name}
                     width={216}
                     height={216}
-                    className='object-contain w-full' 
+                    className='object-contain w-full'
                   />
                 )}
               </div>

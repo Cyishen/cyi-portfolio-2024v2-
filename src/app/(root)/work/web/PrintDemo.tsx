@@ -11,17 +11,17 @@ const webData = [
   {
     id: 1,
     name: 'Wbe1',
-    image: template.duoOne,
+    image: template.printOne,
   },
   {
     id: 2,
     name: 'Wbe2',
-    image: template.duoTwo,
+    image: template.printTwo,
   },
   {
     id: 3,
     name: 'Wbe3',
-    image: template.duoThree,
+    image: template.printThree,
   },
 ]
 
@@ -39,10 +39,10 @@ const PrintDemo = () => {
       <div className="absolute top-5 left-1/2 -translate-x-1/2 h-2 w-14 rounded-full bg-gray-300" />
 
       <div className='w-full md:px-20'>
-        <ProjectHeader 
-          titleWord={'列印 Print'} 
-          secondWord={'用途: 上傳照片列印商品'} 
-          tags={['nextjs', 'tailwindCSS', 'stripe', 'Neon database', 'drizzle ORM', 'uploadthing']} 
+        <ProjectHeader
+          titleWord={'列印 Print'}
+          secondWord={'用途: 上傳照片列印商品'}
+          tags={['nextjs', 'tailwindCSS', 'stripe', 'Neon database', 'drizzle ORM', 'uploadthing']}
           descriptionWords={[
             '資料庫儲存上傳圖片與修改後圖片',
             '身份驗證, 前後端Api串接',
@@ -53,7 +53,7 @@ const PrintDemo = () => {
           descriptionColor='text-white'
           showStore={false}
           demoUrl={demoUrl}
-          buttonVariant='destructive' 
+          buttonVariant='destructive'
         />
 
         <div className='flex overflow-x-scroll custom-scrollbar whitespace-wrap'>
@@ -66,18 +66,19 @@ const PrintDemo = () => {
               >
                 {selectedPhoneId === item.id ? (
                   <Mac
-                    imgSrc={item.image.src} 
+                    imgSrc={item.image.src}
                   />
                 ) : (
-                <img
+                  <img
                     src={item.image.src}
                     alt={item.name}
                     width={216}
                     height={216}
-                    className='object-contain w-full' 
+                    className='object-contain w-full'
                   />
                 )}
               </div>
+
             ))}
           </div>
         </div>

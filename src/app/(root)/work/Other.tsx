@@ -1,4 +1,3 @@
-import Wrapper from '@/components/Wrapper'
 import { displays, images } from '@/lib/icon'
 import Image from 'next/image'
 import { Fragment } from 'react'
@@ -13,6 +12,21 @@ const rowOneImages = [
   {
     url: displays.nail,
     title: "nail",
+    des: "FullStack",
+  },
+  {
+    url: displays.gpt,
+    title: "ai chat",
+    des: "FullStack",
+  },
+  {
+    url: displays.duo,
+    title: "Duo",
+    des: "FullStack",
+  },
+  {
+    url: displays.print,
+    title: "print",
     des: "FullStack",
   },
   {
@@ -77,7 +91,7 @@ const Other = () => {
                     key={item.title} 
                     className='flex max-w-[200px] md:min-w-[300px] border rounded-2xl hover:translate-y-[-10px] transition duration-300 bg-gray-50 overflow-hidden'
                   >
-                    <div className='flex flex-col'>
+                    <div className='flex flex-col pointer-events-none'>
                       <Image
                         src={item.url}
                         alt={item.title}
@@ -86,9 +100,9 @@ const Other = () => {
                         className='h-[60%]'
                       />
                     
-                      <div className='flex flex-col p-2 sm:p-4'>
-                        <p className='flex mt-2 capitalize'>{item.title}</p>
-                        <p className='flex mt-2 capitalize'>{item.des}</p>
+                      <div className='flex flex-col p-2 sm:p-4 space-y-2 capitalize'>
+                        <p className='font-bold'>{item.title}</p>
+                        <p className='text-sm text-gray-500'>{item.des}</p>
                       </div>
                     </div>
                   </div>
@@ -107,7 +121,7 @@ const Other = () => {
                     key={item.title} 
                     className='flex max-w-[200px] md:min-w-[300px] border rounded-2xl hover:translate-y-[-10px] transition duration-300 bg-gray-50 overflow-hidden'
                   >
-                    <div className='flex flex-col'>
+                    <div className='flex flex-col pointer-events-none'>
                       <Image
                         src={item.url}
                         alt={item.title}
@@ -116,9 +130,9 @@ const Other = () => {
                         className='h-[60%]'
                       />
                     
-                      <div className='flex flex-col p-2 sm:p-4'>
-                        <p className='flex mt-2 capitalize'>{item.title}</p>
-                        <p className='flex mt-2 capitalize'>des</p>
+                      <div className='flex flex-col p-2 sm:p-4 space-y-2 capitalize'>
+                        <p className='font-bold'>{item.title}</p>
+                        <p className='text-sm text-gray-500'>{item.des}</p>
                       </div>
                     </div>
                   </div>
