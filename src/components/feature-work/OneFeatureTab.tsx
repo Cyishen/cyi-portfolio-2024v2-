@@ -6,6 +6,7 @@ import { useState } from 'react'
 
 import { motion, animate, useMotionTemplate, useMotionValue, ValueAnimationTransition } from 'framer-motion'
 
+import Image from 'next/image'
 
 const oneTabs = [
   {
@@ -95,28 +96,44 @@ const OneFeatureTab = () => {
 
   return (
     <div className='w-full border-t-2 border-sky-500 rounded-t-3xl p-4 bg-sky-100'>
-      <div className="absolute top-4 left-1/2 -translate-x-1/2 h-2 w-14 rounded-full bg-sky-500"/>
+      <div className="absolute top-4 left-1/2 -translate-x-1/2 h-2 w-14 rounded-full bg-sky-500" />
 
       <div className='flex flex-col items-center justify-center mt-5'>
         <h2 className='flex justify-center font-bold capitalize text-xl md:text-3xl'>
-          網頁平台端 Web 
+          網頁平台端 Web
         </h2>
         <p className='font-light'>Web Platform</p>
       </div>
 
       <div className='mt-3 flex flex-row justify-center gap-1 md:gap-4'>
         {oneTabs.map((project, index) => (
-          <div key={project.id} className='' >
-            {project.show === true ? (
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => handleSelectTab(index)}
-                onMouseEnter={() => handleSelectTab(index)}
-                onMouseLeave={() => handleSelectTab(0)}
-              >
-                {project.title}
-              </Button>) : ''
+          <div key={project.id} className='relative' >
+            {project.show === true ?
+              (
+                <>
+                  <Button
+                    variant="primarySky"
+                    size="sm"
+                    onClick={() => handleSelectTab(index)}
+                    onMouseEnter={() => handleSelectTab(index)}
+                    onMouseLeave={() => handleSelectTab(0)}
+                  >
+                    {project.title}
+                  </Button>
+
+                  {project.isNew && (
+                    <div className='absolute -top-2 -left-11 -translate-y-1/2'>
+                      <Image 
+                        src={'/go.png'} 
+                        alt="star" 
+                        width={60} 
+                        height={60}
+                      />
+                    </div>
+                  )}
+                </>
+              )
+              : ''
             }
           </div>
         ))}
@@ -134,7 +151,7 @@ const OneFeatureTab = () => {
         </motion.div>
       </div>
 
-      <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 h-7 w-full bg-sky-100"/>
+      <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 h-7 w-full bg-sky-100" />
     </div>
   )
 }

@@ -1,3 +1,4 @@
+import { Scale } from "lucide-react"
 import type { Config } from "tailwindcss"
 
 const config = {
@@ -86,6 +87,11 @@ const config = {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(50%)" },
         },
+        "icon-scale": {
+          "0%": { transform: "scale(1)" },
+          "50%": { transform: "scale(0.8)" },
+          "100%": { transform: "scale(1)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -93,6 +99,7 @@ const config = {
         "accordion-hi": "accordion-hi 1s ease-out infinite",
         "move-left": "move-left 1s linear infinite",
         "move-right": "move-right 1s linear infinite",
+        "icon-scale": "icon-scale 1s ease-out infinite",
       },
     },
   },

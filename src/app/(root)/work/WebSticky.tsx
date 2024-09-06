@@ -46,15 +46,15 @@ const WebSticky = () => {
   }, [])
 
   const getTopOffset = (index: number) => {
-    if (screenWidth > 1200) {
+    if (screenWidth > 1000) {
       // 寬螢幕
-      return `calc(-40px + ${index * 170}px)`
+      return `calc(-40px + ${index * 105}px)`
     } else if (screenWidth > 768) {
       // 平板
-      return `calc(-40px + ${index * 170}px)`
+      return `calc(-20px + ${index * 140}px)`
     } else {
       // 手機
-      return `calc(0px + ${index * 120}px)`
+      return `calc(0px + ${index * 105}px)`
     }
   }
 

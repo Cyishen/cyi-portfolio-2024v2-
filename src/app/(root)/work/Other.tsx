@@ -21,7 +21,7 @@ const rowOneImages = [
 
 const Other = () => {
   return (
-    <div className='flex flex-col w-full py-14 md:py-24 h-screen bg-white'>
+    <div className='flex flex-col w-full py-14 md:py-24 h-screen bg-[#30313c]'>
       <Wrapper>
         <div className='flex flex-col items-center w-full text-white'>
           <h2 className="font-bold text-5xl text-center">其他展示</h2>

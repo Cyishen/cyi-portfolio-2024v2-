@@ -5,6 +5,7 @@ import { Button } from '../ui/button'
 import { useState } from 'react'
 
 import { motion, animate, useMotionTemplate, useMotionValue, ValueAnimationTransition } from 'framer-motion'
+import Image from 'next/image'
 
 
 const twoTabs = [
@@ -22,7 +23,7 @@ const twoTabs = [
     id: 2,
     title: '影片分享 App',
     icon: "/assets/lottie/vroom.lottie",
-    isNew: false,
+    isNew: true,
     backgroundPositionX: 10,
     backgroundPositionY: 77,
     backgroundSizeX: 180,
@@ -92,17 +93,33 @@ const TwoFeatureTab = () => {
 
       <div className='mt-3 flex flex-row justify-center gap-1 md:gap-4'>
         {twoTabs.map((project, index) => (
-          <div key={project.id} className='' >
-            {project.show === true ? (
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => handleSelectTab(index)}
-                onMouseEnter={() => handleSelectTab(index)}
-                onMouseLeave={() => handleSelectTab(0)}
-              >
-                {project.title}
-              </Button>) : ''
+          <div key={project.id} className='relative' >
+            {project.show === true ?
+              (
+                <>
+                  <Button
+                    variant="super"
+                    size="sm"
+                    onClick={() => handleSelectTab(index)}
+                    onMouseEnter={() => handleSelectTab(index)}
+                    onMouseLeave={() => handleSelectTab(0)}
+                  >
+                    {project.title}
+                  </Button>
+
+                  {project.isNew && (
+                    <div className='absolute -top-2 -left-11 -translate-y-1/2 -rotate-12'>
+                      <Image 
+                        src={'/go.png'} 
+                        alt="star" 
+                        width={60} 
+                        height={60}
+                      />
+                    </div>
+                  )}
+                </>
+              )
+              : ''
             }
           </div>
         ))}

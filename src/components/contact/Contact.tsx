@@ -23,7 +23,7 @@ const Contact = () => {
           <div className='w-fit flex flex-col items-start justify-center mx-auto mt-10 gap-2 pl-4'>
             <div className='flex items-center justify-center gap-2'>
               <Image src={icons.phone} alt='phone' width={28} height={28} />
-              <Copy title='0983-879460' />
+              <Copy title='Taiwan' />
             </div>
 
             <div className='flex items-center justify-center gap-2'>

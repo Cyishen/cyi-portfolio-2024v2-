@@ -36,7 +36,7 @@ const TripDemo = () => {
 
   return (
     <div className='w-full flex flex-col py-5 px-3 md:px-20 md:py-14 overflow-hidden'>
-      <div className='w-full md:px-20 py-5 space-y-5'>
+      <div className='w-full md:px-20'>
         <ProjectHeader 
           titleWord={'旅遊'} 
           secondWord={'用途: 透過AI Gemini 規劃旅遊行程'} 
@@ -54,7 +54,7 @@ const TripDemo = () => {
         />
 
         <div className='flex overflow-x-scroll custom-scrollbar whitespace-wrap'>
-          <div className='flex gap-5 py-10'>
+          <div className='flex gap-5 py-5'>
             {webData.map((item) => (
               <div
                 key={item.id}

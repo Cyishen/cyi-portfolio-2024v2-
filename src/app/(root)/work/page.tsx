@@ -33,7 +33,7 @@ const WorkPage = () => {
             backgroundColor: "#ffffff",
           },
           {
-            backgroundColor: "#e5e7eb",
+            backgroundColor: "#30313c",
             overwrite: "auto",
           },
         )

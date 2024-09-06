@@ -35,10 +35,10 @@ const DuoDemo = () => {
   };
 
   return (
-    <div className='w-full flex flex-col py-5 px-3 md:px-20 md:py-14 overflow-hidden bg-gray-50 border-t rounded-t-3xl'>
-      <div className="absolute top-5 md:top-8 left-1/2 -translate-x-1/2 h-2 w-14 rounded-full bg-gray-300" />
+    <div className='w-full flex flex-col py-5 px-3 md:px-20 md:py-14 overflow-hidden bg-[#30313c] border-t rounded-t-3xl'>
+      <div className="absolute top-5 left-1/2 -translate-x-1/2 h-2 w-14 rounded-full bg-gray-300" />
 
-      <div className='w-full md:px-20 py-5 space-y-5'>
+      <div className='w-full md:px-20'>
         <ProjectHeader 
           titleWord={'語言學習 Language'} 
           secondWord={'用途: 學習語言'} 
@@ -58,7 +58,7 @@ const DuoDemo = () => {
         />
 
         <div className='flex overflow-x-scroll custom-scrollbar whitespace-wrap'>
-          <div className='flex gap-5 py-10'>
+          <div className='flex gap-5 py-5'>
             {webData.map((item) => (
               <div
                 key={item.id}
