@@ -81,8 +81,8 @@ const TwoFeatureTab = () => {
   };
 
   return (
-    <div className='w-full border-t-2 border-gray-300 rounded-t-3xl p-4 bg-gray-100'>
-      <div className="absolute top-4 left-1/2 -translate-x-1/2 h-2 w-14 rounded-full bg-gray-300"/>
+    <div className='w-full border-t-2 border-pink-300 rounded-t-3xl p-4 bg-pink-200'>
+      <div className="absolute top-4 left-1/2 -translate-x-1/2 h-2 w-14 rounded-full bg-pink-300"/>
 
       <div className='flex flex-col items-center justify-center mt-5'>
         <h2 className='flex justify-center font-bold capitalize text-xl md:text-3xl'>
@@ -137,7 +137,7 @@ const TwoFeatureTab = () => {
         </motion.div>
       </div>
 
-      <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 h-7 w-full bg-gray-100"/>
+      <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 h-7 w-full bg-pink-200"/>
     </div>
   )
 }

@@ -30,9 +30,6 @@ const FeatureWork = () => {
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-2 m-5">
-            <Button variant="outline">
-              Demo
-            </Button>
           </div>
         </div>
       </Wrapper>

@@ -29,7 +29,7 @@ const FeatureSticky = () => {
           key={info.id} 
           className='sticky'
           style={{
-            top: `calc(72px + ${index * 72}px)`
+            top: `calc(40px + ${index * 72}px)`
           }}
         >
           <div className='w-full overflow-hidden'>

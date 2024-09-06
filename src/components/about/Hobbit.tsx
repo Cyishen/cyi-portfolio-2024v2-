@@ -23,7 +23,7 @@ const Hobbit = () => {
         <div className='flex flex-col gap-2 mt-2 mr-6'>
           <div className='flex items-center gap-2'>
             <Image src={icons.phone} alt='phone' width={28} height={28}/>
-            <Copy title='0983-879460'/>
+            <Copy title='Taiwan'/>
           </div>
 
           <div className='flex items-center gap-2'>
