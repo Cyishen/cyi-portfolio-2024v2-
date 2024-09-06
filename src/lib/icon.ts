@@ -20,6 +20,7 @@ import gsap from "../../public/skill/gsap.svg";
 import figma from "../../public/skill/figma.svg";
 
 import app from "../../public/app.png";
+import web from "../../public/web.png";
 
 import duoOne from "../../public/template/duo1.png";
 import duoTwo from "../../public/template/duo2.png";
@@ -119,4 +120,4 @@ export const motionIcon = {
   figma,
 }
 
-export const images = { app }
+export const images = { app, web }

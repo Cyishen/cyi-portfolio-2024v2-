@@ -26,9 +26,9 @@ const oneTabs = [
     title: 'Duo語言學習平台',
     icon: "/assets/lottie/vroom.lottie",
     isNew: false,
-    backgroundPositionX: 98,
+    backgroundPositionX: 110,
     backgroundPositionY: 100,
-    backgroundSizeX: 135,
+    backgroundSizeX: 180,
     show: true,
   },
   {
@@ -37,9 +37,9 @@ const oneTabs = [
     title: '列印平台',
     icon: "/assets/lottie/vroom.lottie",
     isNew: false,
-    backgroundPositionX: 100,
-    backgroundPositionY: 27,
-    backgroundSizeX: 160,
+    backgroundPositionX: 30,
+    backgroundPositionY: -5,
+    backgroundSizeX: 180,
     show: true,
   },
   {
@@ -48,8 +48,8 @@ const oneTabs = [
     title: 'AI 規劃旅遊平台',
     icon: "/assets/lottie/vroom.lottie",
     isNew: false,
-    backgroundPositionX: 40,
-    backgroundPositionY: 27,
+    backgroundPositionX: 0,
+    backgroundPositionY: 100,
     backgroundSizeX: 160,
     show: true,
   },
@@ -143,7 +143,7 @@ const OneFeatureTab = () => {
         <motion.div
           className='aspect-video bg-cover'
           style={{
-            backgroundImage: `url(${images.app.src})`,
+            backgroundImage: `url(${images.web.src})`,
             backgroundPosition: backgroundPosition,
             backgroundSize: backgroundSize
           }}
