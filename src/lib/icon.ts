@@ -35,6 +35,28 @@ import quThree from "../../public/template/qu3.png";
 import appleStore from "../../public/media/applestore.svg";
 import googlePlay from "../../public/media/googleplay.svg";
 
+import nail from "../../public/displays/104-nail.png"
+import chat from "../../public/displays/104-chat.png"
+import burger from "../../public/displays/104-burger.png"
+import social from "../../public/displays/104-social.png"
+import apple from "../../public/displays/gif/apple.gif"
+import futurama from "../../public/displays/gif/futurama.gif"
+import netflix from "../../public/displays/gif/netflix.gif"
+import parallax from "../../public/displays/gif/parallax.gif"
+import twitter from "../../public/displays/gif/twitter.gif"
+
+export const displays = {
+  nail,
+  chat,
+  burger,
+  social,
+  apple,
+  futurama,
+  netflix,
+  parallax,
+  twitter
+}
+
 export const template = {
   duoOne,
   duoTwo,
