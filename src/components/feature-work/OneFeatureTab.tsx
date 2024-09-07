@@ -25,7 +25,7 @@ const oneTabs = [
     image: '/product-image.png',
     title: 'Duo語言學習平台',
     icon: "/assets/lottie/vroom.lottie",
-    isNew: false,
+    isNew: true,
     backgroundPositionX: 110,
     backgroundPositionY: 100,
     backgroundSizeX: 180,
@@ -122,7 +122,7 @@ const OneFeatureTab = () => {
                   </Button>
 
                   {project.isNew && (
-                    <div className='absolute -top-2 -left-11 -translate-y-1/2'>
+                    <div className='absolute -top-4 -left-2 -translate-y-1/2'>
                       <Image 
                         src={'/go.png'} 
                         alt="star" 

@@ -18,7 +18,7 @@ const Copy = ({ title }: { title: string }) => {
   return (
     <Button
       data-state="closed"
-      className="flex max-w-[320px] gap-4"
+      className="flex max-w-[320px] gap-4 bg-green"
       variant="ghost"
       size="sm"
       onClick={copyToClipboard}

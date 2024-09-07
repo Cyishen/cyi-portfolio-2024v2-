@@ -83,7 +83,7 @@ const Hero = () => {
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-2 mt-10">
             <Button>
-              My Works Demo &nbsp;<SquareTerminal />
+              My Works &nbsp;<SquareTerminal />
             </Button>
           </div>
         </div>

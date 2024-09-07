@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Wrapper from '../Wrapper'
 import { Button } from '../ui/button'
+import TextSpan from '../framer-motion/TextSpan'
 
 const Info = () => {
   return (
@@ -16,7 +17,7 @@ const Info = () => {
 
         <div className="flex flex-col items-center text-center mt-20">
           <h2 className="font-black text-7xl md:text-[10vw]">
-            Thank You!
+            Thank You<TextSpan>!</TextSpan>
           </h2>
         </div>
       </Wrapper>

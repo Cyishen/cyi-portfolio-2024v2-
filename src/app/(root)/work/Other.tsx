@@ -1,6 +1,7 @@
 import { displays, images } from '@/lib/icon'
 import Image from 'next/image'
 import { Fragment } from 'react'
+import Hashtags from './Hashtag'
 
 
 const rowOneImages = [
@@ -8,11 +9,13 @@ const rowOneImages = [
     url: images.app,
     title: "app",
     des: "FullStack",
+    tags: <Hashtags tags={['react', 'nextjs']} />,
   },
   {
     url: displays.nail,
     title: "nail",
     des: "FullStack",
+    tags: <Hashtags tags={['nextjs', 'MongoDb', 'zustand']} />,
   },
   {
     url: displays.gpt,
@@ -102,7 +105,6 @@ const Other = () => {
                     
                       <div className='flex flex-col p-2 sm:p-4 space-y-2 capitalize'>
                         <p className='font-bold'>{item.title}</p>
-                        <p className='text-sm text-gray-500'>{item.des}</p>
                       </div>
                     </div>
                   </div>
@@ -132,7 +134,6 @@ const Other = () => {
                     
                       <div className='flex flex-col p-2 sm:p-4 space-y-2 capitalize'>
                         <p className='font-bold'>{item.title}</p>
-                        <p className='text-sm text-gray-500'>{item.des}</p>
                       </div>
                     </div>
                   </div>

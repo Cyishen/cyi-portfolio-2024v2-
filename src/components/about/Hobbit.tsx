@@ -11,7 +11,7 @@ const Hobbit = () => {
         <div className='flex flex-col gap-2 mt-2'>
           <div>
             <p className='font-normal text-sm'>國立虎尾科技大學</p>
-            <p className='font-normal text-sm'>機械系</p>
+            <p className='font-normal text-sm'>Mechanical Engineering</p>
             <p className='font-thin text-[12px]'>2004 - 2008</p>
           </div>
         </div>
