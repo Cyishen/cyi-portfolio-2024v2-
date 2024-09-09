@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button"
 import Hashtags from "./Hashtag"
 import Link from "next/link"
 import Image from "next/image"
-import { icons } from "@/lib/icon"
+import { displays, icons } from "@/lib/icon"
+
 
 type ProjectHeaderProps = {
   titleWord: string
@@ -18,7 +19,9 @@ type ProjectHeaderProps = {
   className?: string
   buttonColor?: string
   buttonVariant?: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link"
+  qrCode?: string
 }
+
 
 const ProjectHeader = ({
   titleWord,
@@ -33,6 +36,7 @@ const ProjectHeader = ({
   buttonColor,
   showStore,
   buttonVariant,
+  qrCode,
 }: ProjectHeaderProps) => {
   return (
     <div className={`w-full flex flex-col rounded-2xl p-5 space-y-3 ${className} ${bgColor}`}>
@@ -58,11 +62,19 @@ const ProjectHeader = ({
           <Image src={icons.googlePlay} height={30} alt='google' />
         </div>
       ) : (
-        <Link href={demoUrl ? demoUrl : '/'} target='_blank'>
-          <Button variant={buttonVariant} size='sm' className={`w-1/3 ${buttonColor}`}>
-            Demo
-          </Button>
-        </Link>
+        <div className="flex gap-2 items-center">
+          <Link href={demoUrl ? demoUrl : '/'} target='_blank'>
+            <Button variant={buttonVariant} size='sm' className={`${buttonColor}`}>
+              Demo
+            </Button>
+          </Link>
+
+          {qrCode && (
+            <div>
+              <Image src={qrCode} width={45} height={45} alt='qrCode' />
+            </div>
+          )}
+        </div>
       )}
     </div>
   )

@@ -56,6 +56,10 @@ import netflix from "../../public/displays/gif/netflix.gif"
 import parallax from "../../public/displays/gif/parallax.gif"
 import twitter from "../../public/displays/gif/twitter.gif"
 
+import codeTrip from "../../public/displays/qrcode-trip.svg"
+import codePrint from "../../public/displays/qrcode-print.svg"
+import codeDuo from "../../public/displays/qrcode-duo.svg"
+
 export const displays = {
   nail,
   chat,
@@ -69,6 +73,9 @@ export const displays = {
   duo,
   gpt,
   print,
+  codeDuo,
+  codePrint,
+  codeTrip,
 }
 
 export const template = {

@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 import Mac from '@/components/Mac'
-import { template } from '@/lib/icon'
+import { displays, template } from '@/lib/icon'
 import ProjectHeader from '../ProjectHeader'
 
 
@@ -50,7 +50,8 @@ const TripDemo = () => {
           descriptionColor='text-white'
           showStore={false}
           demoUrl={demoUrl}
-          buttonVariant='destructive'
+          buttonVariant='outline'
+          qrCode={displays.codeTrip.src}
         />
 
         <div className='flex overflow-x-scroll custom-scrollbar whitespace-wrap'>
