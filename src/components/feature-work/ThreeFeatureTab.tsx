@@ -21,7 +21,7 @@ const threeTabs = [
   },
   {
     id: 2,
-    title: '模型訓練',
+    title: '機器學習',
     icon: "/assets/lottie/vroom.lottie",
     isNew: true,
     backgroundPositionX: 10,
@@ -31,7 +31,7 @@ const threeTabs = [
   },
   {
     id: 3,
-    title: '爬蟲',
+    title: '其他應用',
     icon: "/assets/lottie/vroom.lottie",
     isNew: false,
     backgroundPositionX: 100,
@@ -129,7 +129,7 @@ const ThreeFeatureTab = () => {
         <motion.div
           className='aspect-video bg-cover'
           style={{
-            backgroundImage: `url(${images.app.src})`,
+            backgroundImage: `url(${images.py.src})`,
             backgroundPosition: backgroundPosition,
             backgroundSize: backgroundSize
           }}
