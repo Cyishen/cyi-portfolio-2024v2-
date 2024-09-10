@@ -60,6 +60,7 @@ import twitter from "../../public/displays/gif/twitter.gif"
 import codeTrip from "../../public/displays/qrcode-trip.svg"
 import codePrint from "../../public/displays/qrcode-print.svg"
 import codeDuo from "../../public/displays/qrcode-duo.svg"
+import cyiCode from "../../public/cyi_qrcode.svg"
 
 export const displays = {
   nail,
@@ -77,6 +78,7 @@ export const displays = {
   codeDuo,
   codePrint,
   codeTrip,
+  cyiCode,
 }
 
 export const template = {

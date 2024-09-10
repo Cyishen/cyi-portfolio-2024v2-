@@ -23,7 +23,7 @@ const StickyHero = () => {
           key={hero.id} 
           className='sticky -z-10'
           style={{
-            top: `calc(-100px + ${index * 10}px)`
+            top: `calc(-50px + ${index * 10}px)`
           }}
         >
           <div className='w-full overflow-hidden'>

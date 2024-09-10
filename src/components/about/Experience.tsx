@@ -3,20 +3,18 @@
 const Experience = () => {
   return (
     <div className='col-span-1 md:col-span-1 about-title-type'>
-      <h2>experience</h2>
+      <h2 className="capitalize">experience</h2>
     
       <div className='flex flex-col gap-2 mt-2'>
         <div>
           <div>
-            <p className='font-normal text-sm'>R&D Engineer</p>
+            <p className='font-normal text-sm'>R&D engineer</p>
             <p className='font-normal text-sm'>Dawning</p>
             <p className='font-thin text-[12px]'>2016/1 - 2022/7</p>
           </div>
 
           <ul className='list-disc list-inside px-2 text-sm font-light'>
-            <li>微動開關/ 連接器類產品開發。</li>
-            <li>零件與模具設計, 製造端組裝流程到量產交付。</li>
-            <li>產品試驗分析與異常分析, 提出解決方案。</li>
+            <li>Connecter and Switch products development.</li>
           </ul>
         </div>
 
@@ -34,7 +32,7 @@ const Experience = () => {
 
           <ul className='list-disc list-inside px-2 text-sm font-light'>
             <li>
-              訂單資料處理與倉儲管理。
+              Processing of incoming stock, completing warehouse orders for delivery.  
             </li>
           </ul>
         </div>
@@ -43,14 +41,14 @@ const Experience = () => {
 
         <div>
           <div>
-            <p className='font-normal text-sm'>financial specialist</p>
-            <p className='font-normal text-sm'>sinopac</p>
+            <p className='font-normal text-sm'>Financial advisor</p>
+            <p className='font-normal text-sm'>SinoPac Securities</p>
             <p className='font-thin text-[12px]'>2011/5 - 2013/5</p>
           </div>
 
           <ul className='list-disc list-inside px-2 text-sm font-light'>
             <li>
-              金融業務開發, 協助客戶投資衍生性金融、證券、基金等相關商品。
+              Analyzes market trends and make investment recommendations.
             </li>
           </ul>
         </div>
