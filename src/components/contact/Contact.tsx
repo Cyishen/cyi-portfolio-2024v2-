@@ -5,13 +5,15 @@ import Image from 'next/image'
 import { icons } from '@/lib/icon'
 import { AnimatedNumberInView } from '../AnimatedNumberInView'
 import { Star } from 'lucide-react'
+import Email from './Email'
 
 const Contact = () => {
 
 
   return (
-    <div id="contact" className="relative flex w-full pt-12 pb-5 md:pt-24 md:pb-10 h-screen border-t-2 rounded-t-3xl bg-white/55 backdrop-blur-lg transition-all">
+    <div id="contact" className="relative flex w-full pt-12 pb-5 md:pt-24 md:pb-10 border-t-2 rounded-t-3xl bg-white/55 backdrop-blur-lg transition-all">
       <div className="absolute top-5 left-1/2 -translate-x-1/2 h-2 w-14 rounded-full bg-gray-300" />
+
       <Wrapper>
         <div className='w-full flex flex-col h-full'>
           <div className="w-full flex items-center justify-center ">
@@ -46,7 +48,11 @@ const Contact = () => {
             <AnimatedNumberInView />
           </div>
 
-          <div className="w-full flex flex-col items-center justify-center mt-auto">
+          <div className='mt-10 flex justify-center'>
+            <Email />
+          </div>
+
+          <div className="w-full flex flex-col items-center justify-center mt-10">
             <Link href='#hero'>
               <p>Back to top</p>
             </Link>
