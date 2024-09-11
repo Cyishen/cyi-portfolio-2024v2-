@@ -51,11 +51,15 @@ const Experience = () => {
 
   const days = workExperience.map(item => calculateDaysBetween(item.startDate, item.endDate));
 
-  useEffect(() => {
-    if (isInView) {
-      setValues(days);
-    }
-  }, [isInView]);
+  if (isInView && values[0] === 0) {
+    setValues(days);
+  }
+
+  // useEffect(() => {
+  //   if (isInView) {
+  //     setValues(days);
+  //   }
+  // }, [isInView]);
 
 
   return (
