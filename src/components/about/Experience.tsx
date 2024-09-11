@@ -9,24 +9,24 @@ const workExperience = [
     title: 'R&D engineer',
     company: 'Dawning',
     icon: 'R',
-    startDate: '2016/1',
-    endDate: '2022/7',
+    startDate: '2016-01-21',
+    endDate: '2022-07-31',
     content: 'Connecter and Switch products development.'
   },
   {
     title: 'Warehouse staff',
     company: 'New Zealand',
     icon: 'W',
-    startDate: '2013/8',
-    endDate: '2015/7',
+    startDate: '2013-08-01',
+    endDate: '2015-07-31',
     content: 'Processing of incoming stock, completing warehouse orders for delivery.'
   },
   {
     title: 'Financial advisor',
     company: 'SinoPac Securities',
     icon: 'F',
-    startDate: '2011/5',
-    endDate: '2013/5',
+    startDate: '2011-05-01',
+    endDate: '2013-05-31',
     content: 'Analyzes market trends and make investment recommendations.'
   },
 ]
@@ -60,7 +60,7 @@ const Experience = () => {
                     <p className='font-bold text-sm'>{item.title}</p>
                     <p className='font-normal text-sm'>{item.company}
                       <span className='font-thin text-[12px] pl-2'>
-                        {item.startDate} - {item.endDate}
+                        {item.startDate.slice(0, 7)} - {item.endDate.slice(0, 7)}
                       </span>
                     </p>
                   </div>
