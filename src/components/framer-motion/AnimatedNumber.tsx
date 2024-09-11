@@ -18,7 +18,6 @@ export function AnimatedNumber({
   const spring = useSpring(value, springOptions);
   const display = useTransform(spring, (current) =>
     Math.round(current).toLocaleString()
-    // new Intl.NumberFormat().format(Math.round(current))
   );
 
   useEffect(() => {

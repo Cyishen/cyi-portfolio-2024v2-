@@ -40,7 +40,7 @@ const Experience = () => {
 
   const ref = useRef(null);
   const isInView = useInView(ref);
-  
+
 
   useEffect(() => {
     const days = workExperience.map(item => calculateDaysBetween(item.startDate, item.endDate));
@@ -82,14 +82,16 @@ const Experience = () => {
                   </div>
 
                   <div ref={ref} className="absolute top-0 right-0 flex items-center px-2 py-1 border rounded-sm gap-1">
-                    <AnimatedNumber
-                      className='font-mono text-sm'
-                      springOptions={{
-                        bounce: 0,
-                        duration: 5000,
-                      }}
-                      value={values[idx]}
-                    />
+                    {values[idx] > 0 && (
+                      <AnimatedNumber
+                        className='font-mono text-sm'
+                        springOptions={{
+                          bounce: 0,
+                          duration: 5000,
+                        }}
+                        value={values[idx]}
+                      />
+                    )}
                     <p className="font-mono text-sm">D</p>
                   </div>
                 </div>
