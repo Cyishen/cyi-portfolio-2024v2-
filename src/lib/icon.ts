@@ -62,6 +62,9 @@ import codePrint from "../../public/displays/qrcode-print.svg"
 import codeDuo from "../../public/displays/qrcode-duo.svg"
 import cyiCode from "../../public/cyi_qrcode.svg"
 
+import github from "../../public/media/github.svg"
+import linkedin from "../../public/media/linkedin.svg"
+
 export const displays = {
   nail,
   chat,
@@ -107,6 +110,8 @@ export const icons = {
   email,
   appleStore,
   googlePlay,
+  github,
+  linkedin,
 }
 
 export const frontend = {

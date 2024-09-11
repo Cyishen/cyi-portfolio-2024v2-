@@ -1,6 +1,9 @@
 "use client"
 
-import { Fragment, useState } from "react"
+import { calculateDaysBetween } from "@/lib/aboutTime/Timer"
+import { Fragment, useEffect, useRef, useState } from "react"
+import { useInView } from 'framer-motion';
+import { AnimatedNumber } from "../framer-motion/AnimatedNumber";
 
 
 const workExperience = [
@@ -8,27 +11,52 @@ const workExperience = [
     title: 'R&D engineer',
     company: 'Dawning',
     icon: 'R',
-    time: '2016/1 - 2022/7',
+    startDate: '2016/1',
+    endDate: '2022/7',
     content: 'Connecter and Switch products development.'
   },
   {
     title: 'Warehouse staff',
     company: 'New Zealand',
     icon: 'W',
-    time: '2013/8 - 2015/7',
+    startDate: '2013/8',
+    endDate: '2015/7',
     content: 'Processing of incoming stock, completing warehouse orders for delivery.'
   },
   {
     title: 'Financial advisor',
     company: 'SinoPac Securities',
     icon: 'F',
-    time: '2011/5 - 2013/5',
+    startDate: '2011/5',
+    endDate: '2013/5',
     content: 'Analyzes market trends and make investment recommendations.'
   },
 ]
 
 const Experience = () => {
   const [hoveredIndex, setHoveredIndex] = useState(0);
+
+  const [values, setValues] = useState(new Array(workExperience.length).fill(0));
+
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
+  //* 第0個設定 present
+  // const currentDate = new Date().toISOString().slice(0, 7); //* ex: YYYY/MM
+  // const presentWorkExperience = workExperience.map((item, idx) => ({
+  //   ...item,
+  //   endDate: idx === 0 ? currentDate : item.endDate,
+  // }));
+  
+
+  const days = workExperience.map(item => calculateDaysBetween(item.startDate, item.endDate));
+
+  useEffect(() => {
+    if (isInView) {
+      setValues(days);
+    }
+  }, [isInView]);
+
 
   return (
     <div className='col-span-1 md:col-span-1 about-title-type'>
@@ -38,7 +66,7 @@ const Experience = () => {
         {workExperience.map((item, idx) => (
           <Fragment key={idx}>
             <div
-              className={`flex cursor-pointer p-2 gap-1 group ${hoveredIndex === idx ? 'bg-white rounded-lg' : ''}`}
+              className={`flex cursor-pointer p-2 gap-1 rounded-lg group ${hoveredIndex === idx ? 'bg-white' : ''}`}
               onMouseEnter={() => setHoveredIndex(idx)}
               onMouseLeave={() => setHoveredIndex(-1)}
             >
@@ -50,12 +78,28 @@ const Experience = () => {
                 <div className={`w-0.5 h-full bg-gray-200 mt-2 ${hoveredIndex === idx ? 'bg-sky-200' : ''}`} />
               </div>
 
-              <div>
-                <div>
-                  <p className='font-bold text-sm'>{item.title}</p>
-                  <p className='font-normal text-sm'>{item.company}
-                    <span className='font-thin text-[12px]'> {item.time}</span>
-                  </p>
+              <div className="w-full">
+                <div className="flex gap-3">
+                  <div className="flex-1 flex-col">
+                    <p className='font-bold text-sm'>{item.title}</p>
+                    <p className='font-normal text-sm'>{item.company}
+                      <span className='font-thin text-[12px] pl-1'>
+                        {item.startDate} - {item.endDate}
+                      </span>
+                    </p>
+                  </div>
+
+                  <div ref={ref} className="flex items-center px-2 border rounded-md gap-1">
+                    <AnimatedNumber
+                      className='font-mono text-sm'
+                      springOptions={{
+                        bounce: 0,
+                        duration: 5000,
+                      }}
+                      value={values[idx]}
+                    />
+                    <p className="font-mono text-sm">D</p>
+                  </div>
                 </div>
 
                 <div className='text-sm font-light mt-5'>
