@@ -1,7 +1,9 @@
 "use client"
 
 import { calculateDaysBetween } from "@/lib/aboutTime/Timer"
-import { Fragment, useState } from "react"
+import { Fragment, useRef, useState } from "react"
+import { AnimatedNumber } from "../framer-motion/AnimatedNumber"
+import { useInView } from 'framer-motion';
 
 
 const workExperience = [
@@ -34,6 +36,16 @@ const workExperience = [
 const Experience = () => {
   const [hoveredIndex, setHoveredIndex] = useState(0);
 
+  const [value, setValue] = useState(new Array(workExperience.length).fill(0));
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
+  const days = workExperience.map((item) => calculateDaysBetween(item.startDate, item.endDate))
+
+  if (isInView && value[hoveredIndex] === 0) {
+    setValue(days);
+  }
+
   return (
     <div className='col-span-1 md:col-span-1 about-title-type'>
       <h2 className="capitalize">experience</h2>
@@ -65,10 +77,19 @@ const Experience = () => {
                     </p>
                   </div>
 
-                  <div className={`absolute top-0 right-0 flex items-center p-1 rounded-sm gap-1 ${hoveredIndex === idx ? 'bg-sky-200' : ''}`}>
-                    <p className='font-mono text-sm'>
+                  <div ref={ref} className={`absolute top-0 right-0 flex items-center p-1 rounded-sm gap-1 ${hoveredIndex === idx ? 'bg-sky-200' : ''}`}>
+                    {/* <p className='font-mono text-sm'>
                       {calculateDaysBetween(item.startDate, item.endDate)}
-                    </p>
+                    </p> */}
+
+                    <AnimatedNumber
+                      className='font-mono text-sm'
+                      springOptions={{
+                        bounce: 0,
+                        duration: 5000,
+                      }}
+                      value={value[idx]}
+                    />
                     <p className="font-mono text-sm">D</p>
                   </div>
                 </div>
