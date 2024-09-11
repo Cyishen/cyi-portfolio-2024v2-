@@ -40,26 +40,14 @@ const Experience = () => {
 
   const ref = useRef(null);
   const isInView = useInView(ref);
-
-  //* 第0個設定 present
-  // const currentDate = new Date().toISOString().slice(0, 7); //* ex: YYYY/MM
-  // const presentWorkExperience = workExperience.map((item, idx) => ({
-  //   ...item,
-  //   endDate: idx === 0 ? currentDate : item.endDate,
-  // }));
   
 
-  const days = workExperience.map(item => calculateDaysBetween(item.startDate, item.endDate));
-
-  if (isInView && values[0] === 0) {
-    setValues(days);
-  }
-
-  // useEffect(() => {
-  //   if (isInView) {
-  //     setValues(days);
-  //   }
-  // }, [isInView]);
+  useEffect(() => {
+    const days = workExperience.map(item => calculateDaysBetween(item.startDate, item.endDate));
+    if (isInView) {
+      setValues(days);
+    }
+  }, [isInView]);
 
 
   return (
