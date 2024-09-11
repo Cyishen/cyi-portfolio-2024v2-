@@ -5,6 +5,7 @@ import { useState } from 'react'
 import Mac from '@/components/Mac'
 import { displays, template } from '@/lib/icon'
 import ProjectHeader from '../ProjectHeader'
+import Image from 'next/image'
 
 
 const webData = [
@@ -71,7 +72,7 @@ const DuoDemo = () => {
                     imgSrc={item.image.src} 
                   />
                 ) : (
-                <img
+                <Image
                     src={item.image.src}
                     alt={item.name}
                     width={216}
