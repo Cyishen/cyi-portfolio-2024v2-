@@ -79,17 +79,17 @@ const Experience = () => {
               </div>
 
               <div className="w-full">
-                <div className="flex gap-3">
-                  <div className="flex-1 flex-col">
+                <div className="flex gap-3 relative">
+                  <div className="flex flex-col">
                     <p className='font-bold text-sm'>{item.title}</p>
                     <p className='font-normal text-sm'>{item.company}
-                      <span className='font-thin text-[12px] pl-1'>
+                      <span className='font-thin text-[12px] pl-2'>
                         {item.startDate} - {item.endDate}
                       </span>
                     </p>
                   </div>
 
-                  <div ref={ref} className="flex items-center px-2 border rounded-md gap-1">
+                  <div ref={ref} className="absolute top-0 right-0 flex items-center px-2 py-1 border rounded-sm gap-1">
                     <AnimatedNumber
                       className='font-mono text-sm'
                       springOptions={{
