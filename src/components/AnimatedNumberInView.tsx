@@ -17,7 +17,7 @@ export function AnimatedNumberInView() {
   return (
     <div className='flex w-full items-center justify-center' ref={ref}>
       <AnimatedNumber
-        className='inline-flex items-center font-mono text-2xl font-light text-zinc-800 dark:text-zinc-50'
+        className='inline-flex items-center font-bold text-2xl'
         springOptions={{
           bounce: 0,
           duration: 5000,

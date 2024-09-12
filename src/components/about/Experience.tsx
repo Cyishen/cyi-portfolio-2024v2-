@@ -8,6 +8,14 @@ import { useInView } from 'framer-motion';
 
 const workExperience = [
   {
+    title: 'Learner',
+    company: '',
+    icon: 'L',
+    startDate: '2023-07-01',
+    endDate: 'present',
+    content: 'Learning web and mobile development, focusing on React, Next.js, React Native, and Python.'
+  },
+  {
     title: 'R&D engineer',
     company: 'Dawning',
     icon: 'R',
@@ -41,13 +49,23 @@ const Experience = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
-  const days = workExperience.map((item) => calculateDaysBetween(item.startDate, item.endDate))
+  const calculateDays = () => workExperience.map((item) =>
+    calculateDaysBetween(item.startDate, item.endDate)
+  );
 
   useEffect(() => {
     if (isInView && value.every(val => val === 0)) {
-      setValue(days);
+      setValue(calculateDays());
     }
-  }, [isInView, days, value]);
+
+    const intervalId = setInterval(() => {
+      if (workExperience.some(item => item.endDate.toLowerCase() === "present")) {
+        setValue(calculateDays());
+      }
+    }, 24 * 60 * 60 * 1000);
+
+    return () => clearInterval(intervalId); 
+  }, [isInView, value]);
 
   return (
     <div className='col-span-1 md:col-span-1 about-title-type'>

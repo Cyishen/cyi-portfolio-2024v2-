@@ -89,12 +89,13 @@ const Email = () => {
             onChange={handleChange}
             required
             rows={5}
-            className="w-full px-3 rounded-md border focus:outline-none"
+            placeholder="Say something to me"
+            className="w-full px-3 py-1 rounded-md border focus:outline-none placeholder:font-light text-sm"
           />
         </label>
 
         <Button type="submit" disabled={loading}>
-          {loading ? 'Sending...' : 'Send Me Message'}
+          {loading ? 'Sending...' : 'Send Message'}
         </Button>
       </form>
     </div>

@@ -45,8 +45,8 @@ export const multiFormatDateString = (timestamp: string = ""): string => {
 // TODO* 計算天數
 export const calculateDaysBetween = (startDate: string, endDate: string): number => {
   const start = new Date(startDate.replace(/\//g, '-'));
-  const end = new Date(endDate.replace(/\//g, '-'));
-  
+  const end = endDate.toLowerCase() === "present" ? new Date() : new Date(endDate.replace(/\//g, '-'));
+
   const diffInTime = end.getTime() - start.getTime();
   const diffInDays = Math.ceil(diffInTime / (1000 * 60 * 60 * 24));
   
