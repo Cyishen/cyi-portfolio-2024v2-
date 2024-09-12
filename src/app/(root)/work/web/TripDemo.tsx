@@ -68,7 +68,7 @@ const TripDemo = () => {
                     imgSrc={item.image.src}
                   />
                 ) : (
-                  <Image
+                  <img
                     src={item.image.src}
                     alt={item.name}
                     width={216}
