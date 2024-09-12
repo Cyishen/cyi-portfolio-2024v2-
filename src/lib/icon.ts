@@ -3,6 +3,7 @@ import browse from "../../public/icons/browse.svg";
 import drama from "../../public/icons/drama.svg";
 import phone from "../../public/icons/icon-phone.svg";
 import email from "../../public/icons/icon-email.svg";
+import zoom from "../../public/icons/zoom.svg";
 
 import javascript from "../../public/skill/javascript.svg";
 import typescript from "../../public/skill/typescript.svg";
@@ -112,6 +113,7 @@ export const icons = {
   googlePlay,
   github,
   linkedin,
+  zoom,
 }
 
 export const frontend = {

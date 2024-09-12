@@ -92,6 +92,13 @@ const config = {
           "50%": { transform: "scale(0.8)" },
           "100%": { transform: "scale(1)" },
         },
+        "zoom-move": {
+          "0%": { transform: "translate(0px, 0px)" },
+          "25%": { transform: "translate(10px, -10px)" }, 
+          "50%": { transform: "translate(-10px, 10px) scale(1.1)" }, 
+          "75%": { transform: "translate(10px, 10px)" },
+          "100%": { transform: "translate(0px, 0px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -100,6 +107,7 @@ const config = {
         "move-left": "move-left 1s linear infinite",
         "move-right": "move-right 1s linear infinite",
         "icon-scale": "icon-scale 1s ease-out infinite",
+        "zoom-move": "zoom-move 10s linear infinite",
       },
     },
   },
