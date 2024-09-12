@@ -28,7 +28,7 @@ const SkillBackend = () => {
   const contraction = useRef(null)
 
   return (
-    <div className='relative flex h-[60px] mt-auto' ref={contraction}>
+    <div className='relative flex h-[60px] mt-auto rounded-lg bg-white hover:ring-2 hover:ring-inset hover:ring-sky-200' ref={contraction}>
       {backendDrag.map((item) => (
         <motion.div key={item.title}
           className='inline-flex gap-2 px-6 border rounded-full py-1 absolute cursor-pointer hover:opacity-80'

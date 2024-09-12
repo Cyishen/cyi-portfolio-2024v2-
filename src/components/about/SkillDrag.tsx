@@ -9,7 +9,7 @@ const SkillDrag = () => {
       <div className="col-span-1 md:col-span-2 row-span-2 about-title-type">
         <div className='flex flex-col overflow-hidden gap-2 h-full'>
           <div className='flex flex-col w-full'>
-            <p className='text-sm font-bold mt-2'>前端</p>
+            <p className='text-sm font-bold my-2'>前端 Frontend</p>
 
             <ul className='list-disc list-inside px-2 text-sm font-light'>
               <li>響應式設計: 專注於開發響應式設計，提升行動裝置的可用性，增加行動端流量。</li>
@@ -25,7 +25,7 @@ const SkillDrag = () => {
       <div className="col-span-1 md:col-span-2 about-title-type">
         <div className='flex flex-col overflow-hidden gap-2 h-full'>
           <div className='flex flex-col w-full'>
-            <p className='text-sm font-bold mt-2'>後端</p>
+            <p className='text-sm font-bold my-2'>後端 Backend</p>
 
             <ul className='list-disc list-inside px-2 text-sm font-light'>
               <li>後端: Python 模型訓練、影像OpenCV、爬蟲等基本應用。</li>
@@ -41,10 +41,10 @@ const SkillDrag = () => {
       <div className="col-span-1 md:col-span-2 about-title-type">
         <div className='flex flex-col overflow-hidden gap-2 h-full'>
           <div className='flex flex-col w-full'>
-            <p className='text-sm font-bold mt-2'>其他</p>
+            <p className='text-sm font-bold my-2'>UI・UX x 設計</p>
 
             <ul className='list-disc list-inside px-2 text-sm font-light'>
-              <li>特效與其他工具。</li>
+              {/* <li>設計響應式設計的視覺與交互，確保響應式設計的可用性。</li> */}
             </ul>
           </div>
 
