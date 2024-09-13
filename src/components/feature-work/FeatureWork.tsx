@@ -24,9 +24,19 @@ const FeatureWork = () => {
             Feature Work
           </motion.h2>
 
-          <div className="text-sm text-center mt-4 px-4">
+          <motion.p className="text-sm text-center mt-4 px-4"
+            initial={{opacity: 0, y: 50}} 
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: false}}
+            transition={{
+              type: "tween",
+              bounce: 0.5,
+              duration: 0.5,
+              delay: 0.3,
+            }}
+          >
             Building Web and Mobile applications, with amazing user experiences and function
-          </div>
+          </motion.p>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-2 m-5">
           </div>

@@ -75,24 +75,26 @@ const Experience = () => {
         {workExperience.map((item, idx) => (
           <Fragment key={idx}>
             <div
-              className={`flex cursor-pointer p-2 gap-1 rounded-lg group ${hoveredIndex === idx ? 'bg-white' : ''}`}
+              className={`flex cursor-pointer p-2 gap-1 rounded-lg group ${hoveredIndex === idx ? 'bg-blue-950 text-white' : ''}`}
               onMouseEnter={() => setHoveredIndex(idx)}
               onMouseLeave={() => setHoveredIndex(-1)}
             >
               <div className="px-1 flex flex-col justify-start items-center">
-                <div className={`min-w-10 min-h-10 rounded-full border flex justify-center items-center ${hoveredIndex === idx ? 'bg-sky-200' : ''}`}>
+                <div className={`min-w-10 min-h-10 rounded-full border flex justify-center items-center ${hoveredIndex === idx ? 'bg-sky-300 text-blue-950 border-yellow-100' : ''}`}>
                   <p>{item.icon}</p>
                 </div>
 
-                <div className={`w-0.5 h-full bg-gray-200 mt-2 ${hoveredIndex === idx ? 'bg-sky-200' : ''}`} />
+                <div className={`w-0.5 h-full bg-gray-200 mt-2 ${hoveredIndex === idx ? 'bg-sky-300' : ''}`} />
               </div>
 
               <div className="w-full">
                 <div className="flex gap-3 relative">
                   <div className="flex flex-col">
                     <p className='font-bold text-sm'>{item.title}</p>
-                    <p className='font-normal text-sm'>{item.company}
-                      <span className='font-thin text-[12px] pl-2'>
+
+                    <p className='font-normal text-sm'>
+                      {item.company} {''}
+                      <span className='font-thin text-[12px]'>
                         {item.startDate.slice(0, 7)} - {item.endDate.slice(0, 7)}
                       </span>
                     </p>

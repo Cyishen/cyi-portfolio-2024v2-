@@ -12,8 +12,12 @@ const Info = () => {
       <Wrapper>
         <div className="flex flex-col items-center text-center mt-20">
           <h2 className="font-black text-7xl md:text-[10vw]">
-            Thank You<TextSpan>!</TextSpan>
+            Let's See
           </h2>
+          <p className="font-black text-7xl md:text-[10vw] motion-gradient-word">
+            More {''}
+            <TextSpan>!</TextSpan>
+          </p>
         </div>
 
         <div className='flex justify-center items-center p-5'>

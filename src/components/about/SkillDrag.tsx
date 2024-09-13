@@ -9,12 +9,12 @@ const SkillDrag = () => {
       <div className="col-span-1 md:col-span-2 row-span-2 about-title-type">
         <div className='flex flex-col overflow-hidden gap-2 h-full'>
           <div className='flex flex-col w-full'>
-            <p className='text-sm font-bold my-2'>前端 Frontend</p>
+            <p className='text-base font-bold my-2'>前端 Frontend</p>
 
-            <ul className='list-disc list-inside px-2 text-sm font-light'>
-              <li>響應式設計: 專注於開發響應式設計，提升行動裝置的可用性，增加行動端流量。</li>
-              <li>性能優化與SEO: 優化網頁加載速度和 SEO，提升使用者體驗（UI/UX）。</li>
-              <li>前後端整合: 前端與後端 API 的整合，確保流暢的數據交互和功能實現。</li>
+            <ul className='list-disc list-inside px-2 text-sm font-normal'>
+              <li>響應式網頁設計，提升行動裝置瀏覽體驗，並串接前後端 API。</li>
+              <li>Mobile App 開發，專注於功能實現與用戶體驗優化。</li>
+              <li>優化網頁載入速度，提升 SEO 表現與整體使用者體驗。</li>
             </ul>
           </div>
 
@@ -25,12 +25,12 @@ const SkillDrag = () => {
       <div className="col-span-1 md:col-span-2 about-title-type">
         <div className='flex flex-col overflow-hidden gap-2 h-full'>
           <div className='flex flex-col w-full'>
-            <p className='text-sm font-bold my-2'>後端 Backend</p>
+            <p className='text-base font-bold my-2'>後端 Backend</p>
 
-            <ul className='list-disc list-inside px-2 text-sm font-light'>
-              <li>後端: Python 模型訓練、影像OpenCV、爬蟲等基本應用。</li>
-              <li>資料庫管理: SQL 資料庫操作，設計和管理資料庫結構。</li>
-              <li>API: 後端 API 的設計與建立，能夠提供高效、可靠的數據服務。</li>
+            <ul className='list-disc list-inside px-2 text-sm font-normal'>
+              <li>使用 Node.js 進行後端開發API 設計與實作，提供穩定的數據服務。</li>
+              <li>Python 應用，涵蓋模型訓練、影像處理及網頁爬蟲技術等。</li>
+              <li>資料庫管理：操作 SQL 資料庫，資料庫結構設計與維護。</li>
             </ul>
           </div>
 
@@ -41,10 +41,10 @@ const SkillDrag = () => {
       <div className="col-span-1 md:col-span-2 about-title-type">
         <div className='flex flex-col overflow-hidden gap-2 h-full'>
           <div className='flex flex-col w-full'>
-            <p className='text-sm font-bold my-2'>UI・UX x 設計</p>
+            <p className='text-base font-bold my-2'>UI/UX Design</p>
 
-            <ul className='list-disc list-inside px-2 text-sm font-light'>
-              {/* <li>設計響應式設計的視覺與交互，確保響應式設計的可用性。</li> */}
+            <ul className='list-disc list-inside px-2 text-sm font-normal'>
+              <li>UI/UX Design</li>
             </ul>
           </div>
 
