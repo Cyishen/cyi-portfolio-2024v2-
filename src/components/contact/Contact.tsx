@@ -54,16 +54,15 @@ const Contact = () => {
 
           <div className="w-full flex flex-col items-center justify-center mt-10">
             <Link href='#hero'>
-              <p>Back to top</p>
+              <p className='font-semibold'>Back to top</p>
             </Link>
 
             <div className='flex items-center justify-center gap-1'>
               <p className='font-thin text-xl'>&copy;</p>
 
               <div className='flex gap-1'>
-                <p className=''>2024 by</p>
-                <p className=''>YI SHEN</p>
-                <p className=''>CHEN</p>
+                <p className='font-semibold'>2024 by</p>
+                <p className='font-semibold'>CYI</p>
               </div>
             </div>
           </div>

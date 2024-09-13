@@ -8,7 +8,7 @@ const Portfolio = () => {
   return (
     <div className="h-screen w-full">
       <Wrapper className='flex justify-center py-32'>
-        <div className='flex flex-col justify-center items-center relative border-2 px-10 md:px-32 py-8 mb-32 rounded-[36px] h-fit'>
+        <div className='flex flex-col justify-center items-center relative border-2 px-10 md:px-32 py-8 mb-32 rounded-[36px] h-fit w-full'>
           <div className='absolute left-5 -top-4'>
             <p className='text-2xl font-bold bg-white px-3 md:px-5'>Welcome to my</p>
           </div>

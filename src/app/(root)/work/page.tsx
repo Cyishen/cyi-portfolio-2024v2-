@@ -44,7 +44,7 @@ const WorkPage = () => {
     <>
       <div className='colors flex flex-col w-full md:pt-24'>
         <Wrapper>
-          <div className='flex flex-col items-center w-full mb-10'>
+          <div className='flex flex-col items-center my-32'>
             <h1 className="font-bold text-5xl text-center mt-8">Projects</h1>
 
             <TextEffect per='char' preset='fade' className="text-sm text-center mt-4 px-4">

@@ -41,17 +41,17 @@ const Hobbit = () => {
         <div className='flex gap-4 mt-4 overflow-hidden overflow-x-scroll custom-scrollbar whitespace-wrap'>
           <div className='flex flex-col w-fit items-center justify-center'>
             <Image src={icons.workout} alt='workout' width={28} height={28}/>
-            <p className='font-thin text-sm'>workout</p>
+            <p className='font-normal text-sm'>workout</p>
           </div>
 
           <div className='flex flex-col w-fit items-center justify-center'>
             <Image src={icons.browse} alt='browse' width={28} height={28}/>
-            <p className='font-thin text-sm'>browse</p>
+            <p className='font-normal text-sm'>browse</p>
           </div>
 
           <div className='flex flex-col w-fit items-center justify-center'>
             <Image src={icons.drama} alt='drama' width={28} height={28}/>
-            <p className='font-thin text-sm'>drama</p>
+            <p className='font-normal text-sm'>drama</p>
           </div>
         </div>
       </div>

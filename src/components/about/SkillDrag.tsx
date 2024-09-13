@@ -6,13 +6,13 @@ import SkillOther from "./SkillOther"
 const SkillDrag = () => {
   return (
     <>
-      <div className="col-span-1 md:col-span-2 row-span-2 about-title-type">
+      <div className="col-span-1 md:col-span-2 row-span-2 rounded-xl font-semibold text-xl p-4 bg-sky-100">
         <div className='flex flex-col overflow-hidden gap-2 h-full'>
           <div className='flex flex-col w-full'>
             <p className='text-base font-bold my-2'>前端 Frontend</p>
 
             <ul className='list-disc list-inside px-2 text-sm font-normal'>
-              <li>響應式網頁設計，提升行動裝置瀏覽體驗，並串接前後端 API。</li>
+              <li>Web 響應式網頁設計，提升行動裝置瀏覽體驗，並串接前後端 API。</li>
               <li>Mobile App 開發，專注於功能實現與用戶體驗優化。</li>
               <li>優化網頁載入速度，提升 SEO 表現與整體使用者體驗。</li>
             </ul>
@@ -22,7 +22,7 @@ const SkillDrag = () => {
         </div>
       </div>
 
-      <div className="col-span-1 md:col-span-2 about-title-type">
+      <div className="col-span-1 md:col-span-2 rounded-xl font-semibold text-xl p-4 bg-sky-100">
         <div className='flex flex-col overflow-hidden gap-2 h-full'>
           <div className='flex flex-col w-full'>
             <p className='text-base font-bold my-2'>後端 Backend</p>
@@ -38,7 +38,7 @@ const SkillDrag = () => {
         </div>
       </div>
 
-      <div className="col-span-1 md:col-span-2 about-title-type">
+      <div className="col-span-1 md:col-span-2 rounded-xl font-semibold text-xl p-4 bg-sky-100">
         <div className='flex flex-col overflow-hidden gap-2 h-full'>
           <div className='flex flex-col w-full'>
             <p className='text-base font-bold my-2'>UI/UX Design</p>

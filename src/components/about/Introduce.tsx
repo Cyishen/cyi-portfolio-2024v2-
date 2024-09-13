@@ -1,22 +1,21 @@
 import { icons } from "@/lib/icon"
 import Image from "next/image"
 
-
 const Introduce = () => {
   return (
     <>
-      <div className='col-span-1 md:col-span-1 about-title-type'>
+      <div className='col-span-1 md:col-span-1 rounded-xl bg-blue-950 font-semibold text-xl p-4'>
         <div className="flex justify-between items-start gap-5 md:flex-col md:justify-start md:items-center">
           <div className='min-w-32 min-h-32 rounded-full border flex justify-center items-center'>
-            <h2 className="w-[120px] h-[120px] rounded-full flex justify-center items-center bg-white/55">
+            <h2 className="w-[120px] h-[120px] rounded-full flex justify-center items-center bg-white">
               Cyi
             </h2>
           </div>
 
           <div className="flex justify-center items-center self-center w-full">
             <div className="flex gap-3">
-              <Image src={icons.github} width={32} height={32} alt="github" className="cursor-pointer"/>
-              <Image src={icons.linkedin} width={32} height={32} alt="github" className="cursor-pointer"/>
+              <Image src={icons.github} width={32} height={32} alt="github" className="cursor-pointer hover:invert transition duration-500"/>
+              <Image src={icons.linkedin} width={32} height={32} alt="github" className="cursor-pointer hover:invert transition duration-500"/>
             </div>
           </div>
         </div>
