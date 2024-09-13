@@ -81,11 +81,11 @@ const Hero = () => {
             Building Web and Mobile applications, with amazing user experiences and function
           </TextEffect>
 
-          <div className="flex flex-col md:flex-row items-center justify-center gap-2 mt-10">
+          {/* <div className="flex flex-col md:flex-row items-center justify-center gap-2 mt-10">
             <Button>
               My Works &nbsp;<SquareTerminal />
             </Button>
-          </div>
+          </div> */}
         </div>
       </Wrapper>
     </div>

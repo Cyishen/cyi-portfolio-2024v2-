@@ -19,7 +19,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         seeMore: 
-          "bg-transparent text-black border-black border-2 border-b-4 active:border-b-2 hover:bg-yellow-200 text-black",
+          "bg-transparent text-black border-black border-2 border-b-4 active:border-b-2 hover:bg-yellow-200",
         primarySky: "bg-sky-400 text-primary-foreground hover:bg-sky-400/90 border-sky-500 border-b-4 active:border-b-0",
         super: "bg-pink-500 text-primary-foreground hover:bg-pink-500/90 border-pink-600 border-b-4 active:border-b-0",
         primaryYellow: "bg-yellow-400 text-primary-foreground hover:bg-yellow-400/90 border-yellow-500 border-b-4 active:border-b-0",

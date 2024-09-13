@@ -31,7 +31,7 @@ const Info = () => {
             <Image 
               src={icons.zoom} 
               alt="zoom" 
-              className="absolute w-[15vw] sm:w-[5vw] bottom-0 right-0 -translate-x-1/2 animate-zoom-move [animation-duration:5s] pointer-events-none" 
+              className="absolute w-[15vw] sm:w-[5vw] bottom-0 left-2/3 -translate-x-2/3 animate-zoom-move [animation-duration:5s] pointer-events-none" 
             />
           </div>
         </div>

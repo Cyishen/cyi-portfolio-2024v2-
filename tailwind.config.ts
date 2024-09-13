@@ -95,9 +95,9 @@ const config = {
         "zoom-move": {
           "0%": { transform: "translate(0px, 0px)" },
           "25%": { transform: "translate(10px, -10px)" }, 
-          "50%": { transform: "translate(-10px, 10px) scale(1.1)" }, 
-          "75%": { transform: "translate(10px, 10px)" },
-          "100%": { transform: "translate(0px, 0px)" },
+          "50%": { transform: "translate(-10px, 10px) scale(1.2)" }, 
+          "75%": { transform: "translate(10px, 10px) scale(0.9)" },
+          "100%": { transform: "translate(0px, 0px) " },
         },
       },
       animation: {
