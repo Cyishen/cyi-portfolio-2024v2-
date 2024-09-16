@@ -8,7 +8,7 @@ const Portfolio = () => {
   return (
     <div className="h-screen w-full">
       <Wrapper className='flex justify-center py-32'>
-        <div className='flex flex-col justify-center items-center relative border-2 px-10 md:px-32 py-8 mb-32 rounded-[36px] h-fit w-full'>
+        <div className='flex flex-col justify-center items-center relative border-2 px-10 md:px-32 py-8 mb-32 rounded-[36px] h-fit w-full shadow-[7px_7px_0px_0px_rgba(0,0,0,1)]'>
           <div className='absolute left-5 -top-4'>
             <p className='text-2xl font-bold bg-white px-3 md:px-5'>Welcome to my</p>
           </div>
@@ -23,9 +23,9 @@ const Portfolio = () => {
             </h1>
           </div>
 
-          <div className='w-full flex justify-end'>
+          {/* <div className='w-full flex justify-end'>
             <Image src={displays.cyiCode} alt='cyi code' width={70} height={70} />
-          </div>
+          </div> */}
 
           <div className='absolute right-5 -bottom-4'>
             <p className='text-2xl font-bold bg-white px-3 md:px-5'>Developer</p>

@@ -35,7 +35,7 @@ const SkillOther = () => {
   const contraction = useRef(null)
 
   return (
-    <div className='relative flex h-[60px] mt-auto rounded-lg bg-pink-200 hover:ring-yellow-100 hover:opacity-90 transition duration-500' ref={contraction}>
+    <div className='relative flex h-[60px] mt-auto rounded-lg bg-pink-200 hover:opacity-90 transition duration-500' ref={contraction}>
       {otherDrag.map((item) => (
         <motion.div key={item.title}
           className='inline-flex gap-2 px-6 border rounded-full py-1 absolute cursor-pointer hover:opacity-80'

@@ -18,7 +18,7 @@ const Contact = () => {
         <div className='w-full flex flex-col h-full'>
           <div className="w-full flex items-center justify-center ">
             <h2 className="font-extrabold text-3xl md:text-5xl pt-2">
-              Contact
+              Get in touch
             </h2>
           </div>
 
