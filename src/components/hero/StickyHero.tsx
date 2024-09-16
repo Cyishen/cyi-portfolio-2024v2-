@@ -21,7 +21,7 @@ const StickyHero = () => {
       {stickHero.map((hero, index) => (
         <div 
           key={hero.id} 
-          className='sticky'
+          className='sticky -z-10'
           style={{
             top: `calc(-50px + ${index * 10}px)`
           }}
