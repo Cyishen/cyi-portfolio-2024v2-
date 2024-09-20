@@ -2,6 +2,14 @@ import { icons } from "@/lib/icon"
 import Image from "next/image"
 
 const Introduce = () => {
+
+  const handleClick = (e: any) => {
+    const userConfirmed = confirm("Check YiShen CV ?");
+    if (!userConfirmed) {
+      e.preventDefault(); 
+    }
+  };
+
   return (
     <>
       <div className='col-span-1 md:col-span-1 rounded-xl bg-blue-950 font-semibold text-xl p-4'>
@@ -26,6 +34,7 @@ const Introduce = () => {
                 <a
                   href='/cv_cyi.pdf'
                   target="_blank"
+                  onClick={handleClick}
                   className="hover:invert transition duration-500 hover:-translate-y-1 hover:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] rounded-sm"
                 >
                   <Image src='/cv.svg' width={32} height={32} alt="github" />
