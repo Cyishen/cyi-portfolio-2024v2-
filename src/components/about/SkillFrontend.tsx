@@ -63,7 +63,7 @@ const SkillFrontend = () => {
   const contraction = useRef(null)
 
   return (
-    <div className='relative flex h-[180px] rounded-lg bg-sky-200 hover:opacity-90 transition duration-500 mt-auto' ref={contraction}>
+    <div className='relative flex h-[180px] rounded-lg bg-white/30 backdrop-blur-lg duration-500 mt-auto hover:bg-black hover:border' ref={contraction}>
       {frontendDrag.map((item) => (
         <motion.div key={item.title}
           className='inline-flex gap-2 px-6 border rounded-full py-1 absolute cursor-pointer hover:opacity-80'

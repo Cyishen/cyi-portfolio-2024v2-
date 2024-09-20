@@ -12,7 +12,7 @@ const Introduce = () => {
 
   return (
     <>
-      <div className='col-span-1 md:col-span-1 rounded-xl bg-blue-950 font-semibold text-xl p-4'>
+      <div className='col-span-1 md:col-span-1 rounded-xl bg-black font-semibold text-xl p-4'>
         <div className="flex justify-between items-start gap-5 md:flex-col md:justify-start md:items-center">
           <div className='min-w-32 min-h-32 rounded-full border flex justify-center items-center'>
             <h2 className="w-[120px] h-[120px] rounded-full flex justify-center items-center bg-white">

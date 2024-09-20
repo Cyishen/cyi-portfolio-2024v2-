@@ -6,9 +6,9 @@ import SkillOther from "./SkillOther"
 const SkillDrag = () => {
   return (
     <>
-      <div className="col-span-1 md:col-span-2 row-span-2 rounded-xl font-semibold text-xl p-4 bg-sky-100">
+      <div className="col-span-1 md:col-span-2 row-span-2 rounded-xl font-semibold text-xl p-4 bg-zinc-900">
         <div className='flex flex-col overflow-hidden gap-2 h-full'>
-          <div className='flex flex-col w-full'>
+          <div className='flex flex-col w-full text-white'>
             <p className='text-base font-bold my-2'>前端 Frontend</p>
 
             <ul className='list-disc list-inside px-2 text-sm font-normal'>
@@ -22,9 +22,9 @@ const SkillDrag = () => {
         </div>
       </div>
 
-      <div className="col-span-1 md:col-span-2 rounded-xl font-semibold text-xl p-4 bg-sky-100">
+      <div className="col-span-1 md:col-span-2 rounded-xl font-semibold text-xl p-4 bg-zinc-900">
         <div className='flex flex-col overflow-hidden gap-2 h-full'>
-          <div className='flex flex-col w-full'>
+          <div className='flex flex-col w-full text-white'>
             <p className='text-base font-bold my-2'>後端 Backend</p>
 
             <ul className='list-disc list-inside px-2 text-sm font-normal'>
@@ -38,9 +38,9 @@ const SkillDrag = () => {
         </div>
       </div>
 
-      <div className="col-span-1 md:col-span-2 rounded-xl font-semibold text-xl p-4 bg-sky-100">
+      <div className="col-span-1 md:col-span-2 rounded-xl font-semibold text-xl p-4 bg-zinc-900">
         <div className='flex flex-col overflow-hidden gap-2 h-full'>
-          <div className='flex flex-col w-full'>
+          <div className='flex flex-col w-full text-white'>
             <p className='text-base font-bold my-2'>UI/UX Design</p>
 
             <ul className='list-disc list-inside px-2 text-sm font-normal'>

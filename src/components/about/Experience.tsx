@@ -75,16 +75,16 @@ const Experience = () => {
         {workExperience.map((item, idx) => (
           <Fragment key={idx}>
             <div
-              className={`flex cursor-pointer p-2 gap-1 rounded-lg group ${hoveredIndex === idx ? 'bg-blue-950 text-white' : ''}`}
+              className={`flex cursor-pointer p-2 gap-1 rounded-lg group ${hoveredIndex === idx ? 'bg-zinc-900 text-white' : ''}`}
               onMouseEnter={() => setHoveredIndex(idx)}
               onMouseLeave={() => setHoveredIndex(-1)}
             >
               <div className="px-1 flex flex-col justify-start items-center">
-                <div className={`min-w-10 min-h-10 rounded-full border flex justify-center items-center ${hoveredIndex === idx ? 'bg-sky-300 text-blue-950 border-yellow-100' : ''}`}>
-                  <p>{item.icon}</p>
+                <div className={`min-w-10 min-h-10 rounded-full border flex justify-center items-center ${hoveredIndex === idx ? 'text-blue-400 border-sky-300' : ''}`}>
+                  <p className="w-9 h-9 rounded-full flex justify-center items-center bg-white">{item.icon}</p>
                 </div>
 
-                <div className={`w-0.5 h-full bg-gray-200 mt-2 ${hoveredIndex === idx ? 'bg-sky-300' : ''}`} />
+                <div className={`w-0.5 h-full bg-gray-300 mt-2 ${hoveredIndex === idx ? 'bg-sky-300' : ''}`} />
               </div>
 
               <div className="w-full">
