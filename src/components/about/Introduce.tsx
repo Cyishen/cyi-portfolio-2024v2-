@@ -6,7 +6,7 @@ const Introduce = () => {
   const handleClick = (e: any) => {
     const userConfirmed = confirm("Check YiShen CV ?");
     if (!userConfirmed) {
-      e.preventDefault(); 
+      e.preventDefault();
     }
   };
 
@@ -51,19 +51,15 @@ const Introduce = () => {
             <p className='font-bold text-md'>Hi, I&apos;m Yi Shen.</p>
 
             <p className='font-normal text-sm mt-2'>
-              I am a highly motivated person and a fast learner. Have good communication and analytical skills.
+              I'm an optimistic and outgoing person who gets along well with colleagues. I bring a positive and fun atmosphere to the team, making work more enjoyable and efficient.
             </p>
 
             <p className='font-normal text-sm mt-2'>
-              My positive attitude and high emotional intelligence, bring positive energy to my teammates, enhancing our efficiency. I am confident in my ability to contribute effectively to the team.
+              With experience in both engineering and sales, I've handled various roles and worked closely with cross-functional teams and clients.
             </p>
 
             <p className='font-normal text-sm mt-2'>
-              With years of experience in both engineering and sales, I have successfully navigated various roles, whether in R&D or collaborating with cross-functional teams and clients.
-            </p>
-
-            <p className='font-normal text-sm mt-2'>
-              My ability to analyze problems and provide effective solutions has been a consistent strength throughout my career.
+              I'm good at analyzing problems, optimizing processes, and improving efficiency. Whether working in a team or collaborating with other departments, I communicate effectively to keep projects moving smoothly and achieve our common goals.
             </p>
           </div>
         </div>
