@@ -13,9 +13,24 @@ const Introduce = () => {
           </div>
 
           <div className="flex justify-center items-center self-center w-full">
-            <div className="flex gap-3">
-              <Image src={icons.github} width={32} height={32} alt="github" className="cursor-pointer hover:invert transition duration-500"/>
-              <Image src={icons.linkedin} width={32} height={32} alt="github" className="cursor-pointer hover:invert transition duration-500"/>
+            <div className="flex gap-3 px-4 py-1 rounded-full bg-white/55 backdrop-blur-lg">
+              <div className="flex justify-center items-center">
+                <Image src={icons.github} width={32} height={32} alt="github" className="cursor-pointer hover:invert transition duration-500 hover:-translate-y-1 hover:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] rounded-sm" />
+              </div>
+
+              <div className="flex justify-center items-center">
+                <Image src={icons.linkedin} width={32} height={32} alt="github" className="cursor-pointer hover:invert transition duration-500 hover:-translate-y-1 hover:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] rounded-sm" />
+              </div>
+
+              <div className="flex justify-center items-center">
+                <a
+                  href='/cv_cyi.pdf'
+                  target="_blank"
+                  className="hover:invert transition duration-500 hover:-translate-y-1 hover:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] rounded-sm"
+                >
+                  <Image src='/cv.svg' width={32} height={32} alt="github" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -27,7 +42,7 @@ const Introduce = () => {
             <p className='font-bold text-md'>Hi, I&apos;m Yi Shen.</p>
 
             <p className='font-normal text-sm mt-2'>
-              I am a highly motivated person and a fast learner. Have good communication and analytical skills. 
+              I am a highly motivated person and a fast learner. Have good communication and analytical skills.
             </p>
 
             <p className='font-normal text-sm mt-2'>

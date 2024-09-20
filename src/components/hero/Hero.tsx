@@ -1,8 +1,6 @@
 "use client"
 
 import { TextEffect } from "../framer-motion/TextEffect";
-import { Button } from "../ui/button"
-import { SquareTerminal, StarIcon } from 'lucide-react';
 import Wrapper from "../Wrapper";
 
 import HeroSatellite from "../HeroSatellite";
@@ -80,12 +78,6 @@ const Hero = () => {
           <TextEffect per='char' preset='fade' className="text-sm text-center mt-4 px-4">
             Building Web and Mobile applications, with amazing user experiences and function
           </TextEffect>
-
-          <div className="flex flex-col md:flex-row items-center justify-center gap-2 mt-10">
-            <a href='/cyi.pdf' target="_blank" className="bg-black px-4 py-1 text-white">
-              My CV
-            </a>
-          </div>
         </div>
       </Wrapper>
     </div>
