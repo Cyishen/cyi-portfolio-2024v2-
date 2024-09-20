@@ -21,7 +21,7 @@ const Introduce = () => {
           </div>
 
           <div className="flex justify-center items-center self-center w-full">
-            <div className="flex gap-3 px-4 py-1 rounded-full bg-white/55 backdrop-blur-lg">
+            <div className="flex gap-3 px-4 py-1 rounded-full bg-white/55 backdrop-blur-lg border">
               <div className="flex justify-center items-center">
                 <Image src={icons.github} width={32} height={32} alt="github" className="cursor-pointer hover:invert transition duration-500 hover:-translate-y-1 hover:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] rounded-sm" />
               </div>

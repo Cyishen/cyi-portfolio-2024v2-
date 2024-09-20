@@ -51,7 +51,7 @@ const Hobbit = () => {
       <div className='md:col-span-2 p-4 bg-gray-100 rounded-xl'>
         <h2 className='font-semibold text-xl capitalize'>education</h2>
 
-        <div className='flex flex-col gap-2 mt-2'>
+        <div className='flex flex-col gap-2 mt-2 whitespace-nowrap'>
           <div>
             <p className='font-normal text-sm'>國立虎尾科技大學</p>
             <p className='font-normal text-sm'>Mechanical Engineering</p>
@@ -65,12 +65,16 @@ const Hobbit = () => {
 
         <div className='flex flex-col gap-2 mt-2 mr-6'>
           <div className='flex items-center gap-2'>
-            <Image src={icons.phone} alt='phone' width={28} height={28} />
+            <Image src={icons.phone} alt='phone' width={28} height={28}
+              className='cursor-pointer duration-500 hover:-translate-y-1 hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] rounded-sm'
+            />
             <Copy title='Taiwan' />
           </div>
 
           <div className='flex items-center gap-2'>
-            <Image src={icons.email} alt='email' width={28} height={28} />
+            <Image src={icons.email} alt='email' width={28} height={28}
+              className='cursor-pointer duration-500 hover:-translate-y-1 hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] rounded-sm'
+            />
             <div className=''>
               <Copy title='halu0614@gmail.com' />
             </div>
