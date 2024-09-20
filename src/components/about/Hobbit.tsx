@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { icons } from '@/lib/icon'
 import Copy from '@/lib/Copy'
+import { motion } from 'framer-motion'
 
 const hobbies = [
   {
@@ -16,6 +17,33 @@ const hobbies = [
     label: 'drama'
   },
 ]
+
+const iconJumpVariant = {
+  initial: {
+    y: 0,
+    boxShadow: 'none',
+  },
+  animate: {
+    y: -10,
+    boxShadow: '3px 3px 0px 0px rgba(0,0,0,1)',
+    transition: {
+      duration: 2,
+      ease: 'easeInOut',
+      repeat: Infinity,
+      repeatType: 'reverse' as 'reverse',
+    },
+  }
+};
+
+const containerVariants = {
+  animate: {
+    transition: {
+      delay: 1,
+      staggerChildren: 1,
+    },
+  },
+};
+
 
 const Hobbit = () => {
   return (
@@ -53,20 +81,27 @@ const Hobbit = () => {
       <div className='md:col-span-2 p-4 bg-gray-100 rounded-xl'>
         <h2 className='font-semibold text-xl capitalize'>interests</h2>
 
-        <div className='flex gap-4 mt-1 overflow-hidden overflow-x-scroll custom-scrollbar whitespace-wrap'>
+        <motion.div
+          variants={containerVariants}
+          animate="animate"
+          className='flex gap-4 mt-1 overflow-hidden overflow-x-scroll custom-scrollbar whitespace-wrap'
+        >
           {hobbies.map((item) => (
             <div
               key={item.label}
               className='flex flex-col w-fit items-center justify-center pt-2 gap-1'
             >
-              <div className='p-1 cursor-pointer transition duration-500 hover:-translate-y-2 hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] rounded-sm'>
+              <motion.div
+                variants={iconJumpVariant}
+                className='p-1 cursor-pointer rounded-sm'
+              >
                 <Image src={item.icon} alt={item.label} width={28} height={28} />
-              </div>
+              </motion.div>
 
               <p className='font-normal text-sm capitalize'>{item.label}</p>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </>
   )
