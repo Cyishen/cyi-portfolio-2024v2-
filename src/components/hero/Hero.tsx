@@ -81,11 +81,11 @@ const Hero = () => {
             Building Web and Mobile applications, with amazing user experiences and function
           </TextEffect>
 
-          {/* <div className="flex flex-col md:flex-row items-center justify-center gap-2 mt-10">
-            <Button>
-              My Works &nbsp;<SquareTerminal />
-            </Button>
-          </div> */}
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2 mt-10">
+            <a href='/cyi.pdf' target="_blank" className="bg-black px-4 py-1 text-white">
+              My CV
+            </a>
+          </div>
         </div>
       </Wrapper>
     </div>
