@@ -4,6 +4,7 @@ import { calculateDaysBetween } from "@/lib/aboutTime/Timer"
 import { Fragment, useEffect, useRef, useState } from "react"
 import { AnimatedNumber } from "../framer-motion/AnimatedNumber"
 import { useInView } from 'framer-motion';
+import Image from "next/image";
 
 
 const workExperience = [
@@ -13,7 +14,8 @@ const workExperience = [
     icon: 'L',
     startDate: '2023-07-01',
     endDate: 'present',
-    content: 'Learning web and mobile development, focusing on React, Next.js, React Native, and Python.'
+    content: 'Learning web and mobile development, focusing on React, Next.js, React Native, and Python.',
+    bgImg: '/images/dev.svg'
   },
   {
     title: 'R&D engineer',
@@ -21,7 +23,8 @@ const workExperience = [
     icon: 'R',
     startDate: '2016-01-21',
     endDate: '2022-07-31',
-    content: 'Connecter and Switch products development.'
+    content: 'Connecter and Switch products development.',
+    bgImg: '/images/tool.svg'
   },
   {
     title: 'Warehouse staff',
@@ -64,21 +67,33 @@ const Experience = () => {
       }
     }, 24 * 60 * 60 * 1000);
 
-    return () => clearInterval(intervalId); 
+    return () => clearInterval(intervalId);
   }, [isInView, value]);
 
   return (
-    <div className='col-span-1 md:col-span-1 about-title-type'>
+    <div className='col-span-1 md:col-span-1 about-title-type'
+    >
       <h2 className="capitalize">experience</h2>
 
       <div className='flex flex-col gap-2 mt-2'>
         {workExperience.map((item, idx) => (
           <Fragment key={idx}>
             <div
-              className={`flex cursor-pointer p-2 gap-1 rounded-lg group ${hoveredIndex === idx ? 'bg-zinc-900 text-white' : ''}`}
+              className={`relative flex cursor-pointer p-2 gap-1 rounded-lg group ${hoveredIndex === idx ? 'bg-black text-white' : ''}`}
               onMouseEnter={() => setHoveredIndex(idx)}
-              onMouseLeave={() => setHoveredIndex(-1)}
+            // onMouseLeave={() => setHoveredIndex(-1)}
             >
+              <div className="absolute -top-5 right-1/3">
+                {hoveredIndex === idx && item.bgImg && (
+                  <Image
+                    src={item.bgImg as string}
+                    alt={item.title}
+                    width={100}
+                    height={100}
+                  />
+                )}
+              </div>
+
               <div className="px-1 flex flex-col justify-start items-center">
                 <div className={`min-w-10 min-h-10 rounded-full border flex justify-center items-center ${hoveredIndex === idx ? 'text-blue-400 border-sky-300' : ''}`}>
                   <p className="w-9 h-9 rounded-full flex justify-center items-center bg-white">{item.icon}</p>

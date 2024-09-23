@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { icons } from '@/lib/icon'
 import Copy from '@/lib/Copy'
 import { motion } from 'framer-motion'
+import { Gamepad2, GraduationCap, MessageCircle } from 'lucide-react';
 
 const hobbies = [
   {
@@ -48,7 +49,11 @@ const containerVariants = {
 const Hobbit = () => {
   return (
     <>
-      <div className='md:col-span-2 p-4 bg-gray-100 rounded-xl'>
+      <div className='md:col-span-2 p-4 bg-gray-100 rounded-xl relative'>
+        <div className='absolute top-0 right-1'>
+          <GraduationCap className="w-16 h-16 text-gray-200" /> 
+        </div>
+
         <h2 className='font-semibold text-xl capitalize'>education</h2>
 
         <div className='flex flex-col gap-2 mt-2 whitespace-nowrap'>
@@ -60,7 +65,11 @@ const Hobbit = () => {
         </div>
       </div>
 
-      <div className='md:col-span-2 p-4 bg-gray-100 rounded-xl'>
+      <div className='md:col-span-2 p-4 bg-gray-100 rounded-xl relative'>
+        <div className='absolute top-0 right-1'>
+          <MessageCircle className="w-14 h-14 text-gray-200" /> 
+        </div>
+
         <h2 className='font-semibold text-xl capitalize'>contact</h2>
 
         <div className='flex flex-col gap-2 mt-2 mr-6'>
@@ -82,30 +91,36 @@ const Hobbit = () => {
         </div>
       </div>
 
-      <div className='md:col-span-2 p-4 bg-gray-100 rounded-xl'>
-        <h2 className='font-semibold text-xl capitalize'>interests</h2>
+      <div className='md:col-span-2 bg-gray-100 rounded-xl relative'>
+        <div className='absolute top-0 right-0'>
+          <Gamepad2 className="w-16 h-16 text-gray-200 rotate-[30deg]" /> 
+        </div>
 
-        <motion.div
-          variants={containerVariants}
-          animate="animate"
-          className='flex gap-4 mt-1 overflow-hidden overflow-x-scroll custom-scrollbar whitespace-wrap'
-        >
-          {hobbies.map((item) => (
-            <div
-              key={item.label}
-              className='flex flex-col w-fit items-center justify-center pt-2 gap-1'
-            >
-              <motion.div
-                variants={iconJumpVariant}
-                className='p-1 cursor-pointer rounded-sm'
+        <div className='p-4 w-full h-full'>
+          <h2 className='font-semibold text-xl capitalize'>interests</h2>
+
+          <motion.div
+            variants={containerVariants}
+            animate="animate"
+            className="flex gap-4 mt-1 overflow-hidden overflow-x-scroll custom-scrollbar whitespace-wrap"
+          >
+            {hobbies.map((item) => (
+              <div
+                key={item.label}
+                className='flex flex-col w-fit items-center justify-center pt-2 gap-1'
               >
-                <Image src={item.icon} alt={item.label} width={28} height={28} />
-              </motion.div>
+                <motion.div
+                  variants={iconJumpVariant}
+                  className='p-1 cursor-pointer rounded-sm'
+                >
+                  <Image src={item.icon} alt={item.label} width={28} height={28} />
+                </motion.div>
 
-              <p className='font-normal text-sm capitalize'>{item.label}</p>
-            </div>
-          ))}
-        </motion.div>
+                <p className='font-normal text-sm capitalize'>{item.label}</p>
+              </div>
+            ))}
+          </motion.div>
+        </div>
       </div>
     </>
   )
