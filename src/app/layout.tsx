@@ -14,12 +14,17 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Cyi Portfolio",
   description: "2024 v2",
+  icons: {
+    icon: "/mascot.svg"
+  },
   other: {
     "theme-color": "#ffffff",
+    "twitter:title": "Cyi portfolio",
+    "twitter:description": "portfolio",
     "twitter:image": "/chenyishen.png",
     "twitter:card": "summary_large_image",
     "og:title": "Cyi portfolio",
-    "og:description": "Cyi portfolio",
+    "og:description": "portfolio",
     "og:url": "",
     "og:image": "/chenyishen.png",
     "og:type": "website",
