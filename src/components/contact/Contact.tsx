@@ -54,7 +54,7 @@ const Contact = () => {
 
           <div className="w-full flex flex-col items-center justify-center mt-10">
             <Link href='#hero'>
-              <p className='font-semibold'>Back to top</p>
+              <button className='font-semibold'>Back to top</button>
             </Link>
 
             <div className='flex items-center justify-center gap-1'>
