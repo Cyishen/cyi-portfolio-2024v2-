@@ -50,9 +50,16 @@ const Hobbit = () => {
   return (
     <>
       <div className='md:col-span-2 p-4 bg-gray-100 rounded-xl relative'>
-        <div className='absolute top-0 right-1'>
-          <GraduationCap className="w-16 h-16 text-gray-200" /> 
-        </div>
+        <motion.div className='absolute top-0 right-1'
+          initial={{ rotateY: 0 }}
+          whileInView={{ rotateY: 360 }}
+          transition={{
+            type: "tween",
+            duration: 2,
+          }}
+        >
+          <GraduationCap className="w-14 h-14 text-gray-200" />
+        </motion.div>
 
         <h2 className='font-semibold text-xl capitalize'>education</h2>
 
@@ -66,9 +73,16 @@ const Hobbit = () => {
       </div>
 
       <div className='md:col-span-2 p-4 bg-gray-100 rounded-xl relative'>
-        <div className='absolute top-0 right-1'>
-          <MessageCircle className="w-14 h-14 text-gray-200" /> 
-        </div>
+        <motion.div className='absolute top-0 right-1'
+          initial={{ rotateY: 0 }}
+          whileInView={{ rotateY: 360 }}
+          transition={{
+            type: "tween",
+            duration: 2,
+          }}
+        >
+          <MessageCircle className="w-12 h-12 text-gray-200" />
+        </motion.div>
 
         <h2 className='font-semibold text-xl capitalize'>contact</h2>
 
@@ -92,14 +106,21 @@ const Hobbit = () => {
       </div>
 
       <div className='md:col-span-2 bg-gray-100 rounded-xl relative'>
-        <div className='absolute top-0 right-0'>
-          <Gamepad2 className="w-16 h-16 text-gray-200 rotate-[30deg]" /> 
-        </div>
+        <motion.div className='absolute top-0 right-0'
+          initial={{ rotateY: 0 }}
+          whileInView={{ rotateY: 360 }}
+          transition={{
+            type: "tween",
+            duration: 2,
+          }}
+        >
+          <Gamepad2 className="w-14 h-14 text-gray-200 rotate-[30deg]" />
+        </motion.div>
 
         <div className='p-4 w-full h-full'>
           <h2 className='font-semibold text-xl capitalize'>interests</h2>
 
-          <motion.div
+          {/* <motion.div
             variants={containerVariants}
             animate="animate"
             className="flex gap-4 mt-1 overflow-hidden overflow-x-scroll custom-scrollbar whitespace-wrap"
@@ -119,7 +140,21 @@ const Hobbit = () => {
                 <p className='font-normal text-sm capitalize'>{item.label}</p>
               </div>
             ))}
-          </motion.div>
+          </motion.div> */}
+
+          <div className="flex gap-4 mt-2 overflow-hidden overflow-x-scroll custom-scrollbar whitespace-wrap py-1">
+            {hobbies.map((item) => (
+              <div key={item.label} className='flex flex-col w-fit items-center justify-center p-1'>
+                <div className='cursor-pointer rounded-sm'>
+                  <Image src={item.icon} alt={item.label} width={32} height={32} 
+                    className='p-1 cursor-pointer duration-500 hover:-translate-y-2 hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] rounded-sm'
+                  />
+                </div>
+
+                <p className='font-normal text-sm capitalize'>{item.label}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>

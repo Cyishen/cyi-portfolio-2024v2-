@@ -35,7 +35,7 @@ const SkillOther = () => {
   const contraction = useRef(null)
 
   return (
-    <div className='relative flex h-[60px] mt-auto rounded-lg bg-white/25 backdrop-blur-lg duration-500 hover:bg-black hover:border' ref={contraction}>
+    <div className='relative flex h-[60px] mt-auto rounded-lg bg-white/55 backdrop-blur-lg duration-300 hover:bg-black' ref={contraction}>
       {otherDrag.map((item) => (
         <motion.div key={item.title}
           className='inline-flex gap-2 px-6 border rounded-full py-1 absolute cursor-pointer hover:opacity-80'
@@ -47,7 +47,7 @@ const SkillOther = () => {
           drag
           dragConstraints={contraction}
         >
-          <span className='text-sm font-thin'>{item.title}</span>
+          <span className='text-sm font-mono'>{item.title}</span>
           <Image src={item.icon} alt={item.title} width={20} height={20} className='pointer-events-none' />
         </motion.div>
       ))}

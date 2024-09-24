@@ -63,7 +63,7 @@ const SkillFrontend = () => {
   const contraction = useRef(null)
 
   return (
-    <div className='relative flex h-[180px] rounded-lg bg-white/30 backdrop-blur-lg duration-300 mt-auto hover:border' ref={contraction}>
+    <div className='relative h-[180px] rounded-lg bg-white/55 backdrop-blur-lg duration-300 mt-auto hover:bg-black' ref={contraction}>
       {frontendDrag.map((item) => (
         <motion.div key={item.title}
           className='inline-flex gap-2 px-6 border rounded-full py-1 absolute cursor-pointer hover:opacity-80'
@@ -75,7 +75,7 @@ const SkillFrontend = () => {
           drag
           dragConstraints={contraction}
         >
-          <span className='text-sm font-thin'>{item.title}</span>
+          <span className='text-sm font-mono'>{item.title}</span>
           <Image src={item.icon} alt={item.title} width={20} height={20} className='pointer-events-none'/>
         </motion.div>
       ))}
