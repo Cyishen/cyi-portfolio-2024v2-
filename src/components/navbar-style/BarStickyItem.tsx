@@ -2,25 +2,26 @@ import { Home, PhoneCall, SquareTerminal } from 'lucide-react';
 import AnimatedBackground from './AnimatedBackground';
 import Link from 'next/link';
 
-export function BarStickyItem() {
-  const TABS = [
-    {
-      label: 'Home',
-      icon: <Home className='h-5 w-5' />,
-      href: '/',
-    },
-    {
-      label: 'Work',
-      icon: <SquareTerminal className='h-5 w-5' />,
-      href: '/work',
-    },
-    {
-      label: 'Contact',
-      icon: <PhoneCall className='h-5 w-5' />,
-      href: '/#contact',
-    },
-  ];
+const TABS = [
+  {
+    label: 'Home',
+    icon: <Home className='h-5 w-5' />,
+    href: '/',
+  },
+  {
+    label: 'Work',
+    icon: <SquareTerminal className='h-5 w-5' />,
+    href: '/work',
+  },
+  {
+    label: 'Contact',
+    icon: <PhoneCall className='h-5 w-5' />,
+    href: '/#contact',
+  },
+];
 
+export function BarStickyItem() {
+  
   return (
     <div className='flex space-x-2 p-2'>
       <AnimatedBackground
