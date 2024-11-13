@@ -9,6 +9,7 @@ import Experience from './Experience'
 
 import { motion, useInView } from 'framer-motion';
 import { useRef } from "react";
+import { BouncyCardsFeatures } from './NewGrid'
 
 
 const aboutVariants = {
@@ -39,6 +40,7 @@ const About = () => {
     <div className="flex w-full py-12 md:py-24 bg-gray-50">
       <Wrapper>
         <div className="flex flex-col items-center w-full">
+          {/* <BouncyCardsFeatures /> */}
           <motion.div
             className='w-full space-y-4'
             variants={aboutVariants}

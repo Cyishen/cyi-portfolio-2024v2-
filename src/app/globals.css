@@ -102,11 +102,11 @@ body,
   }
 
   .about-title-type {
-    @apply rounded-xl bg-gray-100 font-semibold text-xl p-4
+    @apply rounded-xl bg-slate-100 font-semibold text-xl p-4
   }
 
   .about-title-contact {
-    @apply rounded-xl bg-gray-100 font-semibold text-xl p-4
+    @apply rounded-xl bg-slate-100 font-semibold text-xl p-4
   }
 
   .motion-gradient-word {

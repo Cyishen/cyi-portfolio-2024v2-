@@ -49,7 +49,9 @@ const containerVariants = {
 const Hobbit = () => {
   return (
     <>
-      <div className='md:col-span-2 p-4 bg-gray-100 rounded-xl relative'>
+      <motion.div className='md:col-span-2 p-4 bg-slate-100 rounded-xl relative group'
+        whileHover={{ scale: 0.95, rotate: "-1deg" }}
+      >
         <motion.div className='absolute top-0 right-1'
           initial={{ rotateY: 0 }}
           whileInView={{ rotateY: 360 }}
@@ -58,7 +60,7 @@ const Hobbit = () => {
             duration: 2,
           }}
         >
-          <GraduationCap className="w-14 h-14 text-gray-200" />
+          <GraduationCap className="w-14 h-14 text-gray-200 group-hover:rotate-[20deg]" />
         </motion.div>
 
         <h2 className='font-semibold text-xl capitalize'>education</h2>
@@ -70,9 +72,11 @@ const Hobbit = () => {
             <p className='font-thin text-[12px]'>2004 - 2008</p>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className='md:col-span-2 p-4 bg-gray-100 rounded-xl relative'>
+      <motion.div className='md:col-span-2 p-4 bg-slate-100 rounded-xl relative group'
+        whileHover={{ scale: 0.95, rotate: "-1deg" }}
+      >
         <motion.div className='absolute top-0 right-1'
           initial={{ rotateY: 0 }}
           whileInView={{ rotateY: 360 }}
@@ -81,7 +85,7 @@ const Hobbit = () => {
             duration: 2,
           }}
         >
-          <MessageCircle className="w-12 h-12 text-gray-200" />
+          <MessageCircle className="w-12 h-12 text-gray-200 group-hover:rotate-[20deg]" />
         </motion.div>
 
         <h2 className='font-semibold text-xl capitalize'>contact</h2>
@@ -103,9 +107,11 @@ const Hobbit = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className='md:col-span-2 bg-gray-100 rounded-xl relative'>
+      <motion.div className='md:col-span-2 bg-slate-100 rounded-xl relative group'
+        whileHover={{ scale: 0.95, rotate: "-1deg" }}
+      >
         <motion.div className='absolute top-0 right-0'
           initial={{ rotateY: 0 }}
           whileInView={{ rotateY: 360 }}
@@ -114,7 +120,7 @@ const Hobbit = () => {
             duration: 2,
           }}
         >
-          <Gamepad2 className="w-14 h-14 text-gray-200 rotate-[30deg]" />
+          <Gamepad2 className="w-14 h-14 text-gray-200 rotate-[30deg] group-hover:rotate-[20deg]" />
         </motion.div>
 
         <div className='p-4 w-full h-full'>
@@ -156,7 +162,7 @@ const Hobbit = () => {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }

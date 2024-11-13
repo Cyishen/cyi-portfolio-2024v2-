@@ -16,7 +16,7 @@ const Introduce = () => {
       >
         <div className="flex justify-between items-start gap-5 md:flex-col md:justify-start md:items-center">
           <div className='min-w-32 min-h-32 rounded-full border flex justify-center items-center'>
-            <h2 className="w-[120px] h-[120px] rounded-full flex justify-center items-center bg-white">
+            <h2 className="w-[120px] h-[120px] rounded-full flex justify-center items-center bg-slate-100">
               Cyi
             </h2>
           </div>
@@ -46,7 +46,7 @@ const Introduce = () => {
         </div>
       </div>
 
-      <div className='col-span-1 md:col-span-3'>
+      <div className='col-span-1 md:col-span-3 bg-slate-100 rounded-2xl'>
         <div className='flex flex-col gap-2 mt-2'>
           <div className='p-4'>
             <p className='font-bold text-md'>Hi, I&apos;m Yi Shen.</p>
